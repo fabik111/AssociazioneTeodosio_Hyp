@@ -15,7 +15,20 @@ $(document).ready(function() {
       }
     },
   });
-
+/*FABIO INIZIO*/
+$("#b1").click(function(){
+   document.getElementById("b1").setAttribute("class","active"); 
+ document.getElementById("b2").setAttribute("class",""); 
+    $("#cont1").show();
+    $("#cont2").hide();
+    
+});
+$("#b2").click(function(){
+   document.getElementById("b2").setAttribute("class","active"); 
+    document.getElementById("b1").setAttribute("class",""); 
+    $("#cont2").show();
+    $("#cont1").hide();
+});/*FABIO FINE*/
   // Tooltip & popovers
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
