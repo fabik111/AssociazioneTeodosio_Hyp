@@ -1511,7 +1511,7 @@ blockquote.right small {
   background: #ededed url(../img/bg_noise-bg.png) left top repeat;
 }
 img {
-  display: block;
+  /*display: block;*/
   max-width: 100%;
   height: auto;
 }
@@ -2417,3 +2417,17 @@ ul.nav-tabs.nav-tabs-right > li:last-child {
   background-position: right center no-repeat;
   background-attachment: fixed;
 }
+/*FABIO INIZIO*/
+@media(min-width: 768px){
+.ifrcnt{
+    height: 450px;
+    width:600px;
+    }
+}
+@media(max-width:768px){
+    .ifrcnt{
+        height: 300px;
+        width: 400px;
+    }
+}
+/*FABIO FINE*/
