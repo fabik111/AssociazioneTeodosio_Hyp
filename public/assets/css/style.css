@@ -2431,3 +2431,25 @@ ul.nav-tabs.nav-tabs-right > li:last-child {
     }
 }
 /*FABIO FINE*/
+
+/*EVA INIZIO - CSS per customizzare la gallery lightbox nelle location*/
+.thumbnails img{
+    display: block;
+    border-radius: 10%;
+    transition: all .2s ease-in-out;
+}
+.thumbnails a{
+    margin-bottom: 15px;
+}
+
+.thumbnails:hover img{
+    opacity: .6;
+    transform: scale(.95);
+}
+
+.thumbnails img:hover {
+    transform: scale(1);
+    box-shadow: 0 0 7px rgba(0,0,0,.5);
+    opacity: 1;
+}
+/*EVA FINE*/

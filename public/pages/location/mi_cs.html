@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nome sito</title><!--il titolo della pagina è da cambiare per ognuna -->
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+  <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="/public/assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="/public/assets/css/font-awesome.min.css" rel="stylesheet">
+  <link href="/public/assets/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="/public/assets/css/owl.theme.min.css" rel="stylesheet">
+  <link href="/public/assets/css/owl.transitions.min.css" rel="stylesheet">
+  <link href="/public/assets/css/lightbox.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="/public/assets/css/style.css" rel="stylesheet">
+
+  <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
+  <link href="#" id="colour-scheme" rel="stylesheet">
+
+ 
+</head>
+
+<body class="page-index has-hero">
+  <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
+  <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
+
+    <!-- ======== @Region: #navigation ======== -->
+    <div id="navigation" class="wrapper">
+  
+      <!--Header & navbar-branding region-->
+      <div class="header">
+        <div class="header-inner container">
+          <div class="row">
+            <div class="col-md-8">
+              <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
+              <a class="navbar-brand" href="/public/index.html" title="Home">
+                <h1 class="hidden">
+                    <img src="/public/assets/img/logo.png" alt="Flexor Logo">
+                    Nome
+                  </h1>
+              </a>
+              <div class="navbar-slogan">
+                Slogan o nome associazione
+                <br> a capo dello slogan
+              </div>
+            </div>
+            <!--header rightside-->
+            <div class="col-md-4">
+        
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="navbar navbar-default">
+          <!--mobile collapse menu button-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav" id="main-menu">
+              <li class="icon-link">
+                <a href="index.html"><i class="fa fa-home"></i></a>
+              </li>
+               <li><a href="pages/about.html">Chi siamo</a></li>
+                <li><a href="pages/news.html">News</a></li>
+              <li class="dropdown">
+                <a href="pages/all_serv.html" class="dropdown-toggle" data-toggle="dropdown">Servizi<b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                    <li class="dropdown-header">I servizi offerti<br>nei nostri centri</li>
+                  <li><a href="pages/services/psico.html" tabindex="-1" class="menu-item">Psicoterapia</a></li>
+                  <li><a href="pages/services/par_tra.html" tabindex="-1" class="menu-item">Parent Training</a></li>
+                  <li><a href="pages/services/supp_dom.html" tabindex="-1" class="menu-item">Supporto Domiciliare</a></li>
+                  <li><a href="pages/services/cent_agg_dis.html" tabindex="-1" class="menu-item">Centro Aggregazione Disabili</a></li>
+                  <li><a href="pages/services/int_ter_com.html" tabindex="-1" class="menu-item">Interventi Terapeutici Complessi</a></li>
+                  <li><a href="pages/services/group_by_serv.html" tabindex="-1" class="menu-item">Servizi per centro</a></li>
+                </ul>
+              </li>
+            <li class="dropdown">
+                <a href="pages/all_loc.html" class="dropdown-toggle" data-toggle="dropdown">Location<b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">I nostri centri</li>
+                  <li><a href="../location/mi_aff.html" tabindex="-1" class="menu-item">Milano - Affori</a></li>
+                  <li><a href="../location/mi_cs.html" tabindex="-1" class="menu-item">Milano - Città Studi</a></li>
+                  <li><a href="../location/melegnano.html" tabindex="-1" class="menu-item">Melegnano</a></li>
+                  <li><a href="../location/mantova.html" tabindex="-1" class="menu-item">Mantova</a></li>
+                  <li><a href="../location/pavia.html" tabindex="-1" class="menu-item">Pavia</a></li>
+                </ul>
+              </li>
+              <li><a href="pages/all_people.html">People</a></li>
+            <li><a href="pages/all_events.html">Events</a></li>
+                <li><a href="pages/dona.html">Dona</a></li>
+                <li><a href="pages/contacts.html">Contatti</a></li>
+                
+            </ul>
+          </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+    </div>  
+  <!-- ======== @Region: #content ======== -->
+  <div id="content">
+  <!-- /content -->
+    
+      <div class="services block block-bg-gradient block-border-bottom">    
+        <div class="container">
+            <div class="row">
+                
+                <div class="col-md-4">
+                    <img src="/public/assets/img/location/mi_cs/intro.jpg" alt="Milano Affori" class="img-responsive img-rounded" width="400px"/>
+                </div>
+                <div class="col-md-8">
+                    <h1 class="block-title">Milano Città Studi</h1>
+                    <p>
+                    "(Descrizione della sede) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
+                    </p>
+                </div>
+                
+            </div>
+          </div>
+      </div>
+          
+      <div class="showcase block block-border-bottom-grey">
+          <div class="container">
+              <div class="row">
+                  
+                  <div class="col-md-12" class="block-title">
+                    <h3 class="block-title">Servizi offerti</h3>
+                    <ul>
+                        <li><a href="#">Service 1</a>
+                        <p>Orari di servizio:<br>
+                            LUN-MAR: 8:00 - 12:00<br>
+                            MER-GIO: 13:00 - 17:00</p></li>
+                        <li><a href="#">Service 2</a>
+                        <p>Orari di servizio:<br>
+                            LUN-MAR: 8:00 - 12:00<br>
+                            MER-GIO: 13:00 - 17:00</p></li>
+                        <li><a href="#">Service 3</a>
+                        <p>Orari di servizio:<br>
+                            LUN-MAR: 8:00 - 12:00<br>
+                            MER-GIO: 13:00 - 17:00</p></li>
+                    </ul>
+                  </div>
+              
+              </div>
+          </div>
+      </div>
+      
+      <div class="showcase block block-border-bottom-grey">
+          <div class="container">
+              <h3 class="block-title">Gallery</h3>
+              
+                <div class="row">
+                    
+                    <div class="thumbnails">
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                            <a href="/public/assets/img/location/mi_cs/1.jpg" data-lightbox="gallery"><img src="/public/assets/img/location/mi_cs/1.jpg"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                            <a href="/public/assets/img/location/mi_cs/2.jpg" data-lightbox="gallery"><img src="/public/assets/img/location/mi_cs/2.jpg"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                            <a href="/public/assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="/public/assets/img/location/mi_aff/1.jpg"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                            <a href="/public/assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="/public/assets/img/location/mi_aff/1.jpg"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                            <a href="/public/assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="/public/assets/img/location/mi_aff/1.jpg"></a>
+                        </div>
+                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                            <a href="/public/assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="/public/assets/img/location/mi_aff/1.jpg"></a>
+                        </div>
+                    </div>
+                    
+                </div>
+              
+              
+          </div>
+      </div>
+      
+      <div class="showcase block block-border-bottom-grey">
+          <div class="container">
+              <h3 class="block-title">Mappa</h3>
+              
+              <div><i class="fa fa-map-pin fa-fw text-primary"></i> Via Giovanni Celoria, 10, 20133 Milano MI<br></div>
+              
+              <div id="map" style="width:100%;height:400px;">>
+                <script>
+                  function initMap() {
+                    var mi_cs = {lat: 45.476657, lng: 9.229060};
+                    var map = new google.maps.Map(document.getElementById('map'), {
+                      zoom: 16,
+                      center: mi_cs
+                    });
+                    var marker = new google.maps.Marker({
+                      position: mi_cs,
+                      map: map
+                    });
+                  }
+                </script>
+                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS_PXQtTiRxasfV_tgnP9SzFm12kBDcQ4&callback=initMap">
+                </script>
+              </div>   
+              
+              
+          </div>
+      </div>
+      
+ </div>
+  
+
+  <!-- ======== @Region: #footer ======== -->
+  <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="/public/assets/img/bg_footer-map.png" data-stellar-background-ratio="0.4">
+    <div class="container">
+
+      <div class="row" id="contact">
+
+        <div class="col-md-3">
+          <address>
+              <strong>Sede legale</strong>
+              <br>
+              <i class="fa fa-map-pin fa-fw text-primary"></i> Viale Romagna 9, Milano 
+              <br>
+              <i class="fa fa-phone fa-fw text-primary"></i> 02333111555
+              <br>
+              <i class="fa fa-envelope-o fa-fw text-primary"></i> info@nome.com
+              <br>
+            </address>
+        </div>
+
+        <div class="col-md-1">
+         
+        
+
+            </div>
+        <div class="col-md-8">
+          <h4 class="text-uppercase">
+              Follow Us On:
+            </h4>
+          <!--social media icons-->
+          <div class="social-media social-media-stacked">
+            <!--@todo: replace with company social media details-->
+            <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+            <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+            <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+          </div>
+        </div>
+
+     
+    
+      <a href="#top" class="scrolltop">Top</a>
+
+     </div>
+    </div>
+  </footer>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="/public/assets/js/jquery.min.js"></script>
+  <script src="/public/assets/js/bootstrap.min.js"></script>
+  <script src="/public/assets/js/owl.carousel.min.js"></script>
+  <script src="/public/assets/js/stellar.min.js"></script>
+  <script src="/public/assets/js/waypoints.min.js"></script>
+  <script src="/public/assets/js/lightbox.js"></script>
+  
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="/public/assets/js/custom.js"></script>
+
+  
+
+</body>
+
+</html>
