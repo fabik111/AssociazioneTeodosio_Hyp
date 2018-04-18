@@ -28,7 +28,29 @@ $("#b2").click(function(){
     document.getElementById("b1").setAttribute("class",""); 
     $("#cont2").show();
     $("#cont1").hide();
-});/*FABIO FINE*/
+});
+$("#drp").click(function(){
+    if(document.documentElement.clientWidth>768){
+        document.getElementById("drp").setAttribute("data-toggle","");
+        console.log(document.documentElement.clientWidth);
+    }else{
+        document.getElementById("drp").setAttribute("data-toggle","dropdown");
+    }
+                     
+                     
+                     }); 
+ $("#drp1").click(function(){
+    if(document.documentElement.clientWidth>768){
+        document.getElementById("drp1").setAttribute("data-toggle","");
+        console.log(document.documentElement.clientWidth);
+    }else{
+        document.getElementById("drp1").setAttribute("data-toggle","dropdown");
+    }
+                     
+                     
+                     });    
+
+/*FABIO FINE*/
   // Tooltip & popovers
   $('[data-toggle="tooltip"]').tooltip();
   $('[data-toggle="popover"]').popover();
@@ -39,7 +61,7 @@ $("#b2").click(function(){
     var dropdown = $(this),
       dropdownToggle = $('[data-toggle="dropdown"]', dropdown),
       dropdownHoverAll = dropdownToggle.data('dropdown-hover-all') || false;
-
+      
     // Mouseover
     dropdown.hover(function(){
       var notMobileMenu = $(navbarToggle).size() > 0 && $(navbarToggle).css('display') === 'none';
