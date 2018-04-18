@@ -1668,7 +1668,7 @@ a.btn-hh-trigger.target-open:after {
 
 /* Contact Section */
 #contact address {
-  color: #999;
+  color: #e6e6e6;
 }
 
 #contact .form #sendmessage {
@@ -1809,10 +1809,10 @@ a.btn-hh-trigger.target-open:after {
   margin: 0;
   display: block;
   text-shadow: none;
-  line-height: 1;
+  line-height: 1;   
   background: url(../img/logo.png) left top no-repeat;
-  height: 30px;
-  width: 145px;
+  height: 90px;
+  width: 294px;
 }
 .navbar-brand:hover {
   text-decoration: none;
