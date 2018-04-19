@@ -98,7 +98,7 @@
                <li><a href="../pages/about.html">Chi siamo</a></li>
                 <li><a href="../pages/news.html">News</a></li>
               <li class="dropdown">
-                <a href="../pages/all_serv.html" class="dropdown-toggle" data-toggle="dropdown">Servizi<b class="caret"></b></a>
+                <a href="../pages/all_serv.html" class="dropdown-toggle" id ="drp" data-toggle="">Servizi<b class="caret"></b></a>
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-menu">
                     <li class="dropdown-header">I servizi offerti<br>nei nostri centri</li>
@@ -111,7 +111,7 @@
                 </ul>
               </li>
             <li class="dropdown">
-                <a href="../../pages/all_loc.html" class="dropdown-toggle" data-toggle="dropdown">Location<b class="caret"></b></a>
+                <a href="../../pages/all_loc.html" class="dropdown-toggle" id="drp1" data-toggle="">Location<b class="caret"></b></a>
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-menu">
                   <li class="dropdown-header">I nostri centri</li>
@@ -141,45 +141,23 @@
       <!-- Page Heading -->
       <h1 class="my-4">Servizi per Centro</h1>
          <br> 
-           <ul>
-               <li><b><a id="groupby"  href="../location/mi_aff.html">Milano - Affori</a></b></li>
-                   <ul>
-                       <li><a id="groupby" href="../services/psico.html">Psicoterapia</a></li>
-                       <li><a id="groupby" href="../services/cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-                       <li><a id="groupby" href="../services/supp_dom.html">Supporto Domiciliare</a></li>
-                    
-                    </ul>
-               
-               <li><b><a id="groupby" href="../location/mi_cs.html">Milano - Città Studi</a></b></li>
-                <ul>
-                    <li><a id="groupby" href="../services/cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-                    <li><a id="groupby" href="../services/par_tra.html">Parent Training</a></li>
-                    
-               </ul>
-               
-               <li><b><a id="groupby" href="../location/melegnano.html">Melegnano</a></b></li>
-               <ul>
-                   <li><a id="groupby" href="../services/supp_dom.html">Supporto Domiciliare</a></li>
-                   <li><a id="groupby" href="../services/int_ter_com.html">Interventi Terapeutici Complessi</a></li>
-               </ul>
-               
-               <li><b><a id="groupby" href="../location/mantova.html">Mantova</a></b></li>
-               <ul>
-                   <li><a id="groupby" href="../services/psico.html">Psicoterapia</a></li>
-                   <li><a id="groupby" href="../services/supp_dom.html">Supporto Domiciliare</a></li>
-                   <li><a id="groupby" href="../services/int_ter_com.html">Interventi Terapeutici Complessi</a></li>
-               </ul>
-               
-               <li><b><a id="groupby" href="../location/pavia.html">Pavia</a></b></li>
-               <ul>
-                   <li><a id="groupby" href="../services/psico.html">Psicoterapia</a></li>
-                   <li><a id="groupby" href="../services/par_tra.html">Parent Training</a></li>
-                   <li><a id="groupby" href="../services/supp_dom.html">Supporto Domiciliare</a></li>
-                   <li><a id="groupby" href="../services/cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-               </ul>
-               
-        </ul>
-    </div>
+         <h3>seleziona centro</h3>
+           <select id="myselect" name="-">
+    <option value="-">-</option>           
+    <option value="Milano - Affori" onclick="mostraservizi('loc1')">Milano - Affori</option>
+    <option value="Milano - Città Studi">Milano - Città Studi</option>
+    <option value="Melegnano">Melegnano</option>
+    <option value="Mantova">Mantova</option>
+    <option value="Pavia">Pavia</option>
+                               
+  </select>
+         </div>
+      </div> 
+       <div class="lista" id="loc1">
+         serv1<br>serv2
+         
+         
+    
       </div>
        <!-- /content -->
 
@@ -236,7 +214,17 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     </div>
   </footer>
 
-  <!-- Required JavaScript Libraries -->
+  <!-- js functions -->
+    <script>
+        function mostraservizi(loc){
+            if(document.getElementById(loc)){
+               questalista=document.getElementById(loc)
+                questalista.show()
+            }
+        }
+    
+    </script>
+    <!-- Required JavaScript Libraries -->
   <script src="../../assets/js/jquery.min.js"></script>
   <script src="../../assets/js/bootstrap.min.js"></script>
   <script src="../../assets/js/owl.carousel.min.js"></script>
