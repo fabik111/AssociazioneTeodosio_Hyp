@@ -1555,7 +1555,9 @@ a:hover {
   background-image: url(../img/backgrounds/boots.png);
 }
 .buildings {
-  background-image: url(../img/backgrounds/buildings.png);
+  background-image: url(../img/bambini1.jpg);/*../img/backgrounds/buildings.png*/
+  background-repeat: no-repeat;
+
 }
 .city {
   background-image: url(../img/backgrounds/city.png);
@@ -2440,6 +2442,10 @@ ul.nav-tabs.nav-tabs-right > li:last-child {
         height: 300px;
         width: 400px;
     }
+}
+.lista{
+    display:none;
+    
 }
 #imgnews{
     height:456px; 
