@@ -142,9 +142,9 @@
       <h1 class="my-4">Servizi per Centro</h1>
          <br> 
          <h3>seleziona centro</h3>
-           <select id="myselect" name="-">
+           <select  class="form-control" id="myselect" name="-">
     <option value="-">-</option>           
-    <option value="Milano - Affori" onclick="mostraservizi('loc1')">Milano - Affori</option>
+    <option value="Milano - Affori" onclick="mostraservizi('#loc1')">Milano - Affori</option>
     <option value="Milano - Città Studi">Milano - Città Studi</option>
     <option value="Melegnano">Melegnano</option>
     <option value="Mantova">Mantova</option>
@@ -159,6 +159,7 @@
          
     
       </div>
+     
        <!-- /content -->
 
 <!--Background image callout with CSS overlay
@@ -214,14 +215,7 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
     </div>
   </footer>
 
-  <!-- js functions -->
-    <script>
-        function mostraservizi(loc){
-            if(document.getElementById(loc)){
-               questalista=document.getElementById(loc)
-                questalista.show()
-            }
-        }
+  
     
     </script>
     <!-- Required JavaScript Libraries -->

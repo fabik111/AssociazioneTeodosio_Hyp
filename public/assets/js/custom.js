@@ -50,6 +50,7 @@ $("#drp").click(function(){
                      
                      });    
 
+
 /*FABIO FINE*/
   // Tooltip & popovers
   $('[data-toggle="tooltip"]').tooltip();
@@ -120,3 +121,6 @@ $("#drp").click(function(){
   });
 
 });
+function mostraservizi(loc){
+  $(loc).show();
+}
