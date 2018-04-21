@@ -2443,10 +2443,7 @@ ul.nav-tabs.nav-tabs-right > li:last-child {
         width: 400px;
     }
 }
-.lista{
-    display:none;
-    
-}
+
 #imgnews{
     height:456px; 
     width:100%;
@@ -2479,3 +2476,10 @@ ul.nav-tabs.nav-tabs-right > li:last-child {
     opacity: 1;
 }
 /*EVA FINE*/
+/*FRANCESCO INIZIO*/
+.lista{
+    display:none;
+    padding-top: 30px;
+    
+}
+/*FRANCESCO FINE*/

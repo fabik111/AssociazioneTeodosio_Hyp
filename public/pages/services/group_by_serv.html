@@ -142,24 +142,58 @@
       <h1 class="my-4">Servizi per Centro</h1>
          <br> 
          <h3>seleziona centro</h3>
-           <select  class="form-control" id="myselect" name="-">
-    <option value="-">-</option>           
-    <option value="Milano - Affori" onclick="mostraservizi('#loc1')">Milano - Affori</option>
-    <option value="Milano - Città Studi">Milano - Città Studi</option>
-    <option value="Melegnano">Melegnano</option>
-    <option value="Mantova">Mantova</option>
-    <option value="Pavia">Pavia</option>
+           <select  class="form-control" id="myselect" name="" onchange="nascondilista()">
+    <option value=""></option>           
+    <option value="Milano - Affori" onclick="mostraservizi('#loc1')" >Milano - Affori</option>
+    <option value="Milano - Città Studi" onclick="mostraservizi('#loc2')">Milano - Città Studi</option>
+    <option value="Melegnano" onclick="mostraservizi('#loc3')">Melegnano</option>
+    <option value="Mantova" onclick="mostraservizi('#loc4')">Mantova</option>
+    <option value="Pavia" onclick="mostraservizi('#loc5')">Pavia</option>
                                
   </select>
+       <div class="lista" id="loc1" >
+         <ul>
+           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
+           <li><a href="./par_tra.html">Parent Training</a></li>
+           <li><a href="./psico.html">Psicoterapia</a></li>
+         </ul>
+       </div>
+        
+        <div class="lista" id="loc2">
+         <ul>
+             <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
+             <li><a href="./par_tra.html">Parent Training</a></li>
+           <li><a href="./supp_dom.html">Supporto Domiciliare</a></li>
+         </ul>
+       </div>
+    
+        <div class="lista" id="loc3">
+         <ul>
+           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
+           <li><a href="./par_tra.html">Parent Training</a></li>
+           <li><a href="./int_ter_com.html">Interventi Terapeutici Complessi</a></li>
+         </ul>
+       </div>
+    
+        <div class="lista" id="loc4">
+         <ul>
+           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
+           <li><a href="./par_tra.html">Parent Training</a></li>
+           <li><a href="./psico.html">Psicoterapia</a></li>
+         </ul>
+       </div>
+    
+        <div class="lista" id="loc5">
+         <ul>
+           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
+           <li><a href="./par_tra.html">Parent Training</a></li>
+           <li><a href="./psico.html">Psicoterapia</a></li>
+         </ul>
+       </div>
+         
          </div>
       </div> 
-       <div class="lista" id="loc1">
-         serv1<br>serv2
-         
-         
-    
-      </div>
-     
+
        <!-- /content -->
 
 <!--Background image callout with CSS overlay
@@ -216,8 +250,6 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
   </footer>
 
   
-    
-    </script>
     <!-- Required JavaScript Libraries -->
   <script src="../../assets/js/jquery.min.js"></script>
   <script src="../../assets/js/bootstrap.min.js"></script>
