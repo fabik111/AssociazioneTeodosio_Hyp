@@ -95,7 +95,7 @@
                <li><a href="../about.html">Chi siamo</a></li>
                 <li><a href="../news.html">News</a></li>
               <li class="dropdown">
-                <a href="../all_serv.html" class="dropdown-toggle" data-toggle="dropdown">Servizi<b class="caret"></b></a>
+                <a href="../all_serv.html" class="dropdown-toggle" data-toggle="" id="drp">Servizi<b class="caret"></b></a>
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-menu">
                     <li class="dropdown-header">I servizi offerti<br>nei nostri centri</li>
@@ -108,7 +108,7 @@
                 </ul>
               </li>
             <li class="dropdown">
-                <a href="../all_loc.html" class="dropdown-toggle" data-toggle="dropdown">Location<b class="caret"></b></a>
+                <a href="../all_loc.html" class="dropdown-toggle" data-toggle="" id="drp">Location<b class="caret"></b></a>
                 <!-- Dropdown Menu -->
                 <ul class="dropdown-menu">
                   <li class="dropdown-header">I nostri centri</li>
@@ -134,113 +134,139 @@
   <!-- ======== @Region: #content ======== -->
   <div id="content">
   <!-- /content -->
-    
-      <div class="services block block-bg-gradient block-border-bottom">    
-        <div class="container">
-            <div class="row">
-                
-                <div class="col-md-4">
-                    <img src="../../assets/img/location/pavia/intro.jpg" alt="Milano Affori" class="img-responsive img-rounded" width="400px"/>
-                </div>
-                <div class="col-md-8">
-                    <h1 class="block-title">Pavia</h1>
-                    <p>
-                    "(Descrizione della sede) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur
-                    </p>
-                </div>
-                
-            </div>
-          </div>
-      </div>
-          
-      <div class="showcase block block-border-bottom-grey">
-          <div class="container">
-              <div class="row">
-                  
-                  <div class="col-md-12" class="block-title">
-                    <h3 class="block-title">Servizi offerti</h3>
-                    <ul>
-                        <li><a href="#">Service 1</a>
-                        <p>Orari di servizio:<br>
-                            LUN-MAR: 8:00 - 12:00<br>
-                            MER-GIO: 13:00 - 17:00</p></li>
-                        <li><a href="#">Service 2</a>
-                        <p>Orari di servizio:<br>
-                            LUN-MAR: 8:00 - 12:00<br>
-                            MER-GIO: 13:00 - 17:00</p></li>
-                        <li><a href="#">Service 3</a>
-                        <p>Orari di servizio:<br>
-                            LUN-MAR: 8:00 - 12:00<br>
-                            MER-GIO: 13:00 - 17:00</p></li>
-                    </ul>
+      <div class="container" id="about">
+          <div class="row">
+              <!-- content -->
+              <div class="col-md-9 col-md-push-3 ">
+                  <div class="page-header">
+                      <h1 class="block-title">Pavia</h1>
                   </div>
+                  
+                  <!-- content 1 -->
+                  <div id="cont1">
+                      
+                      <!-- informazioni -->
+                      <div class="block block-bg-gradient block-border-bottom block-pd-sm">
+                        <h3 class="block-title">Informazioni utili</h3>
+                        <img src="../../assets/img/location/pavia/intro.jpg" alt="" class="img-responsive img-thumbnail img-rounded pull-right m-l m-b" width="400">
+                        <p>"(Descrizione della sede) Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur</p>
+                      </div>
+                      
+                      <!-- servizi offerti -->
+                      <div class="showcase block block-border-bottom-grey">
+                          <div class="col-md-12" class="block-title">
+                              <h3 class="block-title">Servizi offerti</h3>
+                              <ul>
+                                  <li><a href="#">Service 1</a>
+                                      <p>Orari di servizio:<br>
+                                          LUN-MAR: 8:00 - 12:00<br>
+                                          MER-GIO: 13:00 - 17:00</p></li>
+                                  <li><a href="#">Service 2</a>
+                                      <p>Orari di servizio:<br>
+                                          LUN-MAR: 8:00 - 12:00<br>
+                                          MER-GIO: 13:00 - 17:00</p></li>
+                                  <li><a href="#">Service 3</a>
+                                      <p>Orari di servizio:<br>
+                                          LUN-MAR: 8:00 - 12:00<br>
+                                          MER-GIO: 13:00 - 17:00</p></li>
+                              </ul>
+                          </div>
+                      </div>
+                      
+                      <!-- gallery -->
+                      <h3 class="block-title">Gallery</h3>
+                      <div class="row">
+                          <div class="thumbnails">
+                              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                                  <a href="../../assets/img/location/pavia/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/pavia/1.jpg"></a>
+                              </div>
+                              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                                  <a href="../../assets/img/location/pavia/2.jpg" data-lightbox="gallery"><img src="../../assets/img/location/pavia/2.jpg"></a>
+                              </div>
+                              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                                  <a href="../../assets/img/location/pavia/3.jpg" data-lightbox="gallery"><img src="../../assets/img/location/pavia/3.jpg"></a>
+                              </div>
+                              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                                  <a href="../../assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/mi_aff/1.jpg"></a>
+                              </div>
+                              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                                  <a href="../../assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/mi_aff/1.jpg"></a>
+                              </div>
+                              <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
+                                  <a href="../../assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/mi_aff/1.jpg"></a>
+                              </div>
+                          </div>
+                      </div>
+                      
+                  </div>
+                  
               
-              </div>
+              <!-- content 2 -->
+              <!-- mappa -->
+                  <div class="block block-border-bottom-grey block-pd-sm" id="cont2">
+                    <div class="row">
+                          <h3 class="block-title">Mappa</h3>
+                          <address>
+                              <strong>Contatti</strong>
+                              <br>
+                              <i class="fa fa-map-pin fa-fw text-primary"></i> Str. Privata Campeggi, 53, 27100 Pavia PV
+                              <br>
+                              <i class="fa fa-phone fa-fw text-primary"></i> 02339475555
+                              <br>
+                              <i class="fa fa-envelope-o fa-fw text-primary"></i> info@pavia.com
+                              <br>
+                              <strong>Info per prenotazioni</strong>
+                              <br>
+                              <i class="fa fa-phone fa-fw text-primary"></i> 02039487675
+                              <br>
+                              <i class="fa fa-pencil fa-fw text-primary"></i> prenotazioni@pavia.com
+                              <br>
+                          </address>
+                          <div id="map" style="width:100%;height:400px;">
+                              <script>
+                                  function initMap() {
+                                    var mi_affori = {lat: 45.201218, lng: 9.145121};
+                                    var map = new google.maps.Map(document.getElementById('map'), {
+                                      zoom: 16,
+                                      center: mi_affori
+                                    });
+                                    var marker = new google.maps.Marker({
+                                      position: mi_affori,
+                                      map: map
+                                    });
+                                  }
+                              </script>
+                              <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS_PXQtTiRxasfV_tgnP9SzFm12kBDcQ4&callback=initMap">
+                              </script>
+                          </div>
+                        </div>
+                  </div>
+                  
+          
           </div>
-      </div>
+          
+          <!-- sidebar -->
+        <div class="col-md-3 col-md-pull-9  sidebar visible-md-block visible-lg-block">
+          <ul class="nav nav-pills nav-stacked">
+            <li class="active" id="b1" >
+              <a href="#" class="first">
+                  Informazioni
+                </a>
+            </li>
+            <li id="b2">
+              <a href="#">
+                  Come trovarci
+                  <small>Contatti sede e mappa</small>
+                </a>
+            </li>
+          </ul>
+        </div>
+        
+          
+     </div>
+   </div>
+</div>
       
-      <div class="showcase block block-border-bottom-grey">
-          <div class="container">
-              <h3 class="block-title">Gallery</h3>
-              
-                <div class="row">
-                    
-                    <div class="thumbnails">
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <a href="../../assets/img/location/pavia/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/pavia/1.jpg"></a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <a href="../../assets/img/location/pavia/2.jpg" data-lightbox="gallery"><img src="../../assets/img/location/pavia/2.jpg"></a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <a href="../../assets/img/location/pavia/3.jpg" data-lightbox="gallery"><img src="../../assets/img/location/pavia/3.jpg"></a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <a href="../../assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/mi_aff/1.jpg"></a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <a href="../../assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/mi_aff/1.jpg"></a>
-                        </div>
-                        <div class="col-xs-6 col-sm-4 col-md-2 col-lg-2">
-                            <a href="../../assets/img/location/mi_aff/1.jpg" data-lightbox="gallery"><img src="../../assets/img/location/mi_aff/1.jpg"></a>
-                        </div>
-                    </div>
-                    
-                </div>
-              
-              
-          </div>
-      </div>
-      
-      <div class="showcase block block-border-bottom-grey">
-          <div class="container">
-              <h3 class="block-title">Mappa</h3>
-              
-              <div><i class="fa fa-map-pin fa-fw text-primary"></i> Str. Privata Campeggi, 53, 27100 Pavia PV<br></div>
-              
-              <div id="map" style="width:100%;height:400px;">>
-                <script>
-                  function initMap() {
-                    var mi_affori = {lat: 45.201218, lng: 9.145121};
-                    var map = new google.maps.Map(document.getElementById('map'), {
-                      zoom: 16,
-                      center: mi_affori
-                    });
-                    var marker = new google.maps.Marker({
-                      position: mi_affori,
-                      map: map
-                    });
-                  }
-                </script>
-                <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDS_PXQtTiRxasfV_tgnP9SzFm12kBDcQ4&callback=initMap">
-                </script>
-              </div>   
-              
-              
-          </div>
-      </div>
-      
- </div>
   
 
   <!-- ======== @Region: #footer ======== -->
