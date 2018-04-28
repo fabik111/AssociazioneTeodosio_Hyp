@@ -45,11 +45,23 @@ $("#drp").click(function(){
         console.log(document.documentElement.clientWidth);
     }else{
         document.getElementById("drp1").setAttribute("data-toggle","dropdown");
+        
     }
-                     
-                     
-                     });    
+                     });
+$( "select" )
+  .change(function() {
+    nascondilista();
+   
+    $( "select option:selected" ).each(function() {
+    
+       mostraservizi($( this ).val());
+       
+    });
+    
+  })
+  .trigger( "change" );
 
+   
 
 /*FABIO FINE*/
   // Tooltip & popovers
