@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Nome sito</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+  <!-- Facebook Opengraph integration: https://developers.facebook.com/docs/sharing/opengraph -->
+  <meta property="og:title" content="">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
+  <meta property="og:site_name" content="">
+  <meta property="og:description" content="">
+
+  <!-- Twitter Cards integration: https://dev.twitter.com/cards/  -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="">
+  <meta name="twitter:title" content="">
+  <meta name="twitter:description" content="">
+  <meta name="twitter:image" content="">
+
+  <!-- Fav and touch icons -->
+  <link rel="shortcut icon" href="img/icons/favicon.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="img/icons/114x114.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="img/icons/72x72.png">
+  <link rel="apple-touch-icon-precomposed" href="img/icons/default.png">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700,900" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="assets/css/font-awesome.min.css" rel="stylesheet">
+  
+  <link href="assets/css/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/css/owl.theme.min.css" rel="stylesheet">
+  <link href="assets/css/owl.transitions.min.css" rel="stylesheet">
+ <link href="assets/css/half-slider.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!--Your custom colour override - predefined colours are: colour-blue.css, colour-green.css, colour-lavander.css, orange is default-->
+  <link href="#" id="colour-scheme" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Flexor
+    Theme URL: https://bootstrapmade.com/flexor-free-multipurpose-bootstrap-template/
+    Author: BootstrapMade.com
+    Author URL: https://bootstrapmade.com
+  ======================================================= -->
+</head>
+
+<body class="page-index has-hero">
+  <!--Change the background class to alter background image, options are: benches, boots, buildings, city, metro -->
+  <div id="background-wrapper" class="buildings" data-stellar-background-ratio="0.1">
+
+    <!-- ======== @Region: #navigation ======== -->
+    <div id="navigation" class="wrapper">
+  
+      <!--Header & navbar-branding region-->
+      <div class="header">
+        <div class="header-inner container">
+          <div class="row">
+            <div class="col-md-8">
+              <!--navbar-branding/logo - hidden image tag & site name so things like Facebook to pick up, actual logo set via CSS for flexibility -->
+              <a class="navbar-brand" href="index.html" title="Home">
+                <h1 class="hidden">
+                    <img src="assets/img/logo.png" alt="Flexor Logo">
+                    Nome
+                  </h1>
+              </a>
+              <div class="navbar-slogan">
+                Slogan o nome associazione
+                <br> a capo dello slogan
+              </div>
+            </div>
+            <!--header rightside-->
+            <div class="col-md-4">
+              <!--
+              <ul class="list-inline user-menu pull-right">
+                <li class="user-register"><i class="fa fa-edit text-primary "></i> <a href="register.html" class="text-uppercase">Register</a></li>
+                <li class="user-login"><i class="fa fa-sign-in text-primary"></i> <a href="login.html" class="text-uppercase">Login</a></li>
+              </ul>-->
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="navbar navbar-default">
+          <!--mobile collapse menu button-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <!--social media icons-->
+          <!--
+            <div class="navbar-text social-media social-media-inline pull-right">
+            <!--@todo: replace with company social media details--
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+          </div>->
+          <!--everything within this div is collapsed on mobile-->
+          <div class="navbar-collapse collapse ">
+            <ul class="nav navbar-nav " id="main-menu" >
+              
+                <li class="icon-link ">
+                <a href="index.html"><i class="fa fa-home"></i></a>
+              </li>
+               <li ><a href="pages/about.html">Chi siamo</a></li>
+                <li ><a href="pages/news.html">News</a></li>
+                  
+                
+              <li class="dropdown ">
+                 <a href="pages/all_serv.html" id="drp" class="dropdown-toggle" data-toggle="" >Servizi<b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu ">
+                    <li class="dropdown-header">I servizi offerti<br>nei nostri centri</li>
+                 <li><a href="pages/services/psico.html" tabindex="-1" class="menu-item">Psicoterapia</a></li>
+                  <li><a href="pages/services/par_tra.html" tabindex="-1" class="menu-item">Parent Training</a></li>
+                  <li><a href="pages/services/supp_dom.html" tabindex="-1" class="menu-item">Supporto Domiciliare</a></li>
+                  <li><a href="pages/services/cent_agg_dis.html" tabindex="-1" class="menu-item">Centro Aggregazione Disabili</a></li>
+                  <li><a href="pages/services/int_ter_com.html" tabindex="-1" class="menu-item">Interventi Terapeutici Complessi</a></li>
+                  <li><a href="pages/services/group_by_serv.html" tabindex="-1" class="menu-item">Servizi per centro</a></li>
+                </ul>
+              </li>
+            <li class="dropdown ">
+                <a href="pages/all_loc.html" id="drp1" class="dropdown-toggle" data-toggle="" >Location<b class="caret"></b></a>
+                <!-- Dropdown Menu -->
+                <ul class="dropdown-menu">
+                  <li class="dropdown-header">I nostri centri</li>
+                  <li><a href="pages/location/mi_aff.html" tabindex="-1" class="menu-item">Milano - Affori</a></li>
+                  <li><a href="pages/location/mi_cs.html" tabindex="-1" class="menu-item">Milano - Città Studi</a></li>
+                  <li><a href="pages/location/melegnano.html" tabindex="-1" class="menu-item">Melegnano</a></li>
+                  <li><a href="pages/location/mantova.html" tabindex="-1" class="menu-item">Mantova</a></li>
+                  <li><a href="pages/location/pavia.html" tabindex="-1" class="menu-item">Pavia</a></li>
+                </ul>
+              </li>
+                
+                
+              <li ><a href="pages/all_people.html">People</a></li>
+            <li ><a href="pages/all_events.html">Events</a></li>
+                <li ><a href="pages/dona.html">Dona</a></li>
+                <li><a href="pages/contacts.html">Contatti</a></li>
+                
+            </ul>
+          
+            </div>
+          <!--/.navbar-collapse -->
+        </div>
+      </div>
+    </div>
+    <div class="hero" id="highlighted">
+     <!-- <div class="inner">-->
+          
+              <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <img class="first-slide" src="../public/assets/img/donazione.png" alt="First slide" height="380px">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Aiutaci con una donazione</h1>
+              <p>Permettici di offrire il nostro aiuto ai bambini disabili.           
+                </p>
+              <p><a class="btn btn-lg btn-primary" href="../public/pages/dona.html" role="button">Dona qui</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="second-slide" src="../public/assets/img/Alex_Zanardi_3.png" alt="Second slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>Visita di Alex Zanardi</h1>
+              <p>Il campione paraolimpico è venuto in visita della nostra struttura di Milano-Affori,<br>dove è stato accolto dall'entusiasmo di tutti</p>
+              <p><a class="btn btn-lg btn-primary" href="../public/pages/news.html" role="button">Leggi la news</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="item">
+          <img class="third-slide" src="assets/img/slides/slide1.png" alt="Third slide">
+          <div class="container">
+            <div class="carousel-caption">
+              <h1>One more for good measure.</h1>
+              <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p>
+              <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div><!-- /.carousel -->
+        
+  <!--  </div>-->
+  </div>
+
+  <!-- ======== @Region: #content ======== -->
+  <div id="content">
+    <!-- Mission Statement -->
+    <div class="mission text-center block block-pd-sm block-bg-noise">
+      <div class="container">
+        <h2 class="text-shadow-white">
+            Dal 1986 ci occupiamo di aiutare tutti i più bisognosi, ogni giorno con passione e amore i nostri volontari fanno la differenza nell'assistenza a persone portatori di handicap
+            <a href="pages/about.html" class="btn btn-more"><i class="fa fa-plus"></i>Scopri di più</a>
+          </h2>
+      </div>
+    </div>
+    <!--Showcase-->
+    <div class="showcase block block-border-bottom-grey">
+      <div class="container">
+        <h2 class="block-title">
+            Ultimi Eventi
+          </h2>
+        
+        <div class="item-carousel" data-toggle="owlcarousel" data-owlcarousel-settings='{"items":3, "pagination":false, "navigation":true, "itemsScaleUp":true}'>
+          <div class="item">
+            <a href="pages/event/event2.html" class="overlay-wrapper">
+                <img src="assets/img/event/event2.jpg" alt="Project 1 image" class="img-responsive underlay" class="thbe">
+                <span class="overlay">
+                  <span class="overlay-content"> <span class="h4">Cena per raccogliere fondi</span> </span>
+                </span>
+              </a>
+            <div class="item-details bg-noise">
+              <h4 class="item-title">
+                  <a href="pages/event/event2.html">Cena di Beneficenza</a>
+                </h4>
+              <a href="pages/event/event2.html" class="btn btn-more"><i class="fa fa-plus"></i>Leggi</a>
+            </div>
+          </div>
+          <div class="item">
+            <a href="pages/event/event1.html" class="overlay-wrapper">
+                <img src="assets/img/event/event1-1.png" alt="Evento 1" class="img-responsive underlay" class="thbe">
+                <span class="overlay">
+                  <span class="overlay-content"> <span class="h4">Centro estivo per bambini</span> </span>
+                </span>
+              </a>
+            <div class="item-details bg-noise">
+              <h4 class="item-title">
+                  <a href="pages/event/event1.html">Centro Estivo 2018</a>
+                </h4>
+              <a href="pages/event/event1.html" class="btn btn-more"><i class="fa fa-plus"></i>Leggi</a>
+            </div>
+          </div>
+          <div class="item">
+            <a href="pages/event/event3.html" class="overlay-wrapper">
+                <img src="assets/img/event/Sirmione2.jpg" alt="Project 3 image" class="img-responsive underlay" class="thbe">
+                <span class="overlay">
+                  <span class="overlay-content"> <span class="h4">Gita sul lago di Garda</span> </span>
+                </span>
+              </a>
+            <div class="item-details bg-noise">
+              <h4 class="item-title">
+                  <a href="pages/event/event3.html">Gita a Sirmione</a>
+                </h4>
+              <a href="pages/event/event3.html" class="btn btn-more"><i class="fa fa-plus"></i>Leggi</a>
+            </div>
+          </div>
+          <div class="item">
+            <a href="pages/event/event4.html" class="overlay-wrapper">
+                <img src="assets/img/event/farobrunate2.jpg" alt="Project 4 image" class="img-responsive underlay" class="thbe">
+                <span class="overlay">
+                  <span class="overlay-content"> <span class="h4">Visita del faro voltiano</span> </span>
+                </span>
+              </a>
+            <div class="item-details bg-noise">
+              <h4 class="item-title">
+                  <a href="pages/event/event4.html">Gita a Brunate</a>
+                </h4>
+              <a href="pages/event/event4.html" class="btn btn-more"><i class="fa fa-plus"></i>Leggi</a>
+            </div>
+          </div>
+          <div class="item">
+            <a href="pages/event/event5.html" class="overlay-wrapper">
+                <img src="assets/img/event/festa1.jpg" alt="Project 5 image" class="img-responsive underlay" class="thbe">
+                <span class="overlay">
+                  <span class="overlay-content"> <span class="h4">Festa di fine anno scolastico</span> </span>
+                </span>
+              </a>
+            <div class="item-details bg-noise">
+              <h4 class="item-title">
+                  <a href="pages/event/event5.html">Grande Festa</a>
+                </h4>
+              <a href="pages/event/event5.html" class="btn btn-more"><i class="fa fa-plus"></i>Leggi</a>
+            </div>
+          </div>
+         
+         
+        </div>
+      </div>
+    </div>
+    <!-- Services -->
+    <div class="services block block-bg-gradient block-border-bottom">
+      <div class="container">
+        <h2 class="block-title">
+            Cosa offriamo
+          </h2>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-heart fa-stack-1x fa-inverse"></i> </span>
+            <h4 class="text-weight-strong">
+                Supporto alle famiglie
+              </h4>
+            <p>Forniamo tutta una serie di servizi per educare, informare e aiutare le famiglie di una persona affetta da disabilità. Così da comprendere meglio le sue esigenze</p>
+           
+          </div>
+          <div class="col-md-4 text-center">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-wheelchair fa-stack-1x fa-inverse"></i> </span>
+            <h4 class="text-weight-strong">
+                Servizi alla persona
+              </h4>
+            <p>Il nostri operatori ASA, con grandissima umanità, ogni giorno svolgono attività indirizzate a mantenere e/o recuperare il benessere psico-fisico della persona e a ridurne i rischi di isolamento e di emarginazione, assistendola in tutte le attività della vita quotidiana ed aiutandola nell’espletamento delle sue funzioni personali essenziali.</p>
+            
+          </div>
+          <div class="col-md-4 text-center">
+            <span class="fa-stack fa-5x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-universal-access  fa-stack-1x fa-inverse"></i> </span>
+            <h4 class="text-weight-strong">
+                Accoglienza
+              </h4>
+            <p>Poniamo la persona al centro e siamo pronti ad accogliere tutti </p>
+            
+          </div>
+            
+        </div>
+          <div class="row text-center">
+              <p>
+              <a href="pages/all_serv.html" class="btn btn-more large i-right ">Vedi tutto <i class="fa fa-angle-right"></i></a>
+            </p>
+            </div>
+      </div>
+    </div>
+
+      <!--
+Background image callout with CSS overlay
+Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQuery .block-bg-overlay = overlays the background image, colour is inherited from block-bg-* classes .block-bg-overlay-NUMBER = determines opcacity value of overlay from 1-9 (default is 5) ie. .block-bg-overlay-2 or .block-bg-overlay-6
+-->
+     
+      
+    <!--Customer testimonial & Latest Blog posts-->
+    <div class="testimonials block-contained">
+      <div class="row">
+        <!--Customer testimonial-->
+        <div class="col-md-6 m-b-lg">
+          <h3 class="block-title">
+              Dicono di noi
+            </h3>
+          <blockquote>
+                 <img src="assets/img/misc/Alex_Zanardi.jpg" alt="Alex Zanardi" height="140" width="90">
+            <p>La vita è sempre degna di essere vissuta e lo sport dà possibilità incredibili per migliorare il proprio quotidiano e ritrovare motivazioni.</p>
+         
+            <small>
+                <strong>Alex Zanardi</strong>
+                <br>
+                Campione Paraolimpico
+              </small>
+          </blockquote>
+        </div>
+        <!--Latest Blog posts-->
+        <div class="col-md-6 blog-roll">
+          <h3 class="block-title">
+              Ultime notizie
+            </h3>
+          <!-- Blog post 1-->
+          <div class="media">
+            <div class="media-left hidden-xs">
+              <!-- Date desktop -->
+              <div class="date-wrapper"> <span class="date-m">Gen</span> <span class="date-d">11</span> </div>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">
+                  <a href="pages/news.html" class="text-weight-strong">Visita di Alex Zanardi</a>
+                </h4>
+              <!-- Meta details mobile -->
+              <ul class="list-inline meta text-muted visible-xs">
+                <li><i class="fa fa-calendar"></i> <span class="visible-md"></span> 11 Gen 2018</li>
+                
+              </ul>
+              <p>
+              L'atleta paraolimpico è venuto a trovare alcuni nostri assistiti
+                <a href="pages/news.html">Leggi <i class="fa fa-angle-right"></i></a>
+              </p>
+            </div>
+          </div>
+          <!-- Blog post 2 -->
+          <div class="media">
+            <div class="media-left hidden-xs">
+              <!-- Date desktop -->
+              <div class="date-wrapper"> <span class="date-m">Dic</span> <span class="date-d">25</span> </div>
+            </div>
+            <div class="media-body">
+              <h4 class="media-heading">
+                  <a href="pages/news.html" class="text-weight-strong">Buon Natale</a>
+                </h4>
+              <!-- Meta details mobile -->
+              <ul class="list-inline meta text-muted visible-xs">
+                <li><i class="fa fa-calendar"></i> <span class="visible-md"></span> 25 Dic 2017</li>
+               
+              </ul>
+              <p>
+                I nostri auguri di Buone Feste
+                <a href="pages/news.html">Leggi <i class="fa fa-angle-right"></i></a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /content -->
+    
+ 
+  <!-- ======== @Region: #footer ======== -->
+  <footer id="footer" class="block block-bg-grey-dark" data-block-bg-img="assets/img/bg_footer-map.png" data-stellar-background-ratio="0.4">
+    <div class="container">
+
+      <div class="row" id="contact">
+
+        <div class="col-md-3">
+          <address>
+              <strong>Sede legale</strong>
+              <br>
+              <i class="fa fa-map-pin fa-fw text-primary"></i> Viale Romagna 9, Milano 
+              <br>
+              <i class="fa fa-phone fa-fw text-primary"></i> 02333111555
+              <br>
+              <i class="fa fa-envelope-o fa-fw text-primary"></i> info@nome.com
+              <br>
+              <div class="social-media social-media-stacked">
+            <i class="fa fa-question fa-fw text-primary"></i><a href="#">FAQ</a></div>
+            </address>
+        </div>
+
+        <div class="col-md-1">
+            
+                
+            
+            </div>
+        <div class="col-md-8">
+          <h4 class="text-uppercase">
+              Follow Us On:
+            </h4>
+          <!--social media icons-->
+          <div class="social-media social-media-stacked">
+            <!--@todo: replace with company social media details-->
+            <a href="#"><i class="fa fa-twitter fa-fw"></i> Twitter</a>
+            <a href="#"><i class="fa fa-facebook fa-fw"></i> Facebook</a>
+            <a href="#"><i class="fa fa-linkedin fa-fw"></i> LinkedIn</a>
+            <a href="#"><i class="fa fa-google-plus fa-fw"></i> Google+</a>
+          </div>
+        </div>
+
+     
+    
+      <a href="#top" class="scrolltop">Top</a>
+
+    </div>
+  </footer>
+
+  <!-- Required JavaScript Libraries -->
+  <script src="assets/js/jquery.min.js"></script>
+ <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/owl.carousel.min.js"></script>
+  <script src="assets/js/stellar.min.js"></script>
+  <script src="assets/js/waypoints.min.js"></script>
+
+ 
+
+  <!-- Template Specisifc Custom Javascript File -->
+  <script src="assets/js/custom.js"></script>
+
+ 
+
+</body>
+
+</html>
