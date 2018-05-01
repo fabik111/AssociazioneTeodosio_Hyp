@@ -29,4 +29,5 @@ Progetto di hypermedia AA 2017-2018: Associazione Teodosio
 - 1-col-portfolio.css  //CSS Layout pagine
 - owl-*css             //CSS slide-show homepage
 - style.css            //CSS Generico
+- lightbox.css         //CSS Modal slideshow (Locations, Events)
 ```
