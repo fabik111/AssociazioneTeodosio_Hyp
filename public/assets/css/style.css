@@ -2453,6 +2453,11 @@ ul.nav-tabs.nav-tabs-right > li:last-child {
     display: block;
     }
 }
+@media(max-width:500px){
+    #TitleCarousel{
+        font-size: 25px;
+    }
+}
 /*FABIO FINE*/
 
 /*EVA INIZIO - CSS per customizzare la gallery lightbox nelle location*/
