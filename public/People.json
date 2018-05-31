@@ -1,0 +1,45 @@
+[
+    {
+         "id"=1,
+        "nome"="Stefano Falchi",
+        "img1"="../assets/img/people/person1small.jpg",
+        "descrizione"="<p>Stefano Falchi è nato nel 1942. Dopo una laurea in fisica, un dottorato in matematica e in fisica teorica ha percorso una carriera brillante negli ambienti universitari britannici. E' autore di numerosi libri di grande successo, tra cui anche libri per bambini, scritti in collaborazione con sua figlia. E' stato colpito dalla SLA ma questo non ha mai spezzato la sua vitalità e il suo impegno verso gli altri. E' grazie a lui e alla sua famiglia che è stata fondata l'Associazione Teodosio. Nonostante l'età avanzata e la malattia che lo debilita, partecipa ancora volentieri agli eventi organizzati dall'Associazione.</p>",
+        "img2"="../../assets/img/people/person1.jpg",
+        "titolo di studio" = "Fondatore dell'associazione"
+    },
+    
+    {
+         "id"=2,
+        "nome"="Giulia Dati",
+        "img1"="../assets/img/people/person2small.jpg",
+        "descrizione"="<p>Laureata all'Università degli studi di Milano in Psicologia nel 2004, ha iniziato fin da subito a lavorare con bambini di 3-10 anni come consulente nelle scuole dell'infanzia e elementari. Dal 2008 al 2011 ha lavorato come ricercatrice presso l'universita Bicocca di Milano sulle relazioni interpersonali dei disabili. Dal 2012 fa parte del nostro team.</p>",
+        "img2"="../../assets/img/people/person2.jpg",
+        "titolo di studio" = "Psicologa"
+    },
+    {
+         "id"=3,
+        "nome"="Giovanna Giuliani",
+        "img1"="../assets/img/people/person3small.jpg",
+        "descrizione"="<p>Oltre a essere una nota scrittrice di libri sulla disabilità infantile, Giovanna è stata con noi sin dagli inizi dell'Associazione. Dopo la laurea in Scienze della Formazione nel 1983 e quella in Psicologia nel 1990, si è dedicata alla pratica della sua professione nelle scuole del territorio. Dopo svariati anni di servizio ha abbandonato la carriera scolastica per dedicarsi pienamente all'Associazione in ruolo di membro d'onore e Responsabile dei Centri di Aggregazione</p>",
+        "img2"="../../assets/img/people/person3.jpg",
+        "titolo di studio" = "Educatrice"
+    },
+    {
+         "id"=4,
+        "nome"="Astolfo Benedetti",
+        "img1"="../assets/img/people/person4small.jpg",
+        "descrizione"="<p>Diplomato all'Istituto Psicopedagogico di Monza e laureato in Infermieristica, ha lavorato per diversi anni all'ospedale San Raffaele di Milano. Dal 2010 è in pensione ma non ha mai smesso di dare una mano ha chi ha più bisogno. In questi anni infatti ha collaborato con diverse associazioni in tutta Italia impegnate nell'assistenza a malati, disabili, e anziani. Dal 2014 è entrato a far parte della nostra associazionein in qualità di operatore Asa</p>",
+        "img2"="../../assets/img/people/person4.jpg",
+        "titolo di studio" = "Operatore ASA"
+    },
+    {
+         "id"=5,
+        "nome"="Edoardo Re",
+        "img1"="../assets/img/people/person5small.jpg",
+        "descrizione"="<p>Laureato in Psicologia all'Università di Pavia nel 2001. Edoardo è specializzato nelle relazioni personali. E' l'ideatore di tutte le nostre strategie di comunicazione grazie alle quali riusciamo a guadagnarci la fiducia di tutti.</p>",
+        "img2"="../../assets/img/people/person5.jpg",
+        "titolo di studio" = "Psicologo"
+    },
+    
+    
+]
