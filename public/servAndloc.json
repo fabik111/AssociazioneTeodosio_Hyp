@@ -1,0 +1,43 @@
+[
+    /*
+    1.mi-aff (inter-comp, par-tra, psico)
+    2.mi-cs (centro-aggr-dis, par-tra, supp-dom)
+    3.melegnano ( centro-aggr-dis, inter-comp, psico)
+    4.mantova (centro-aggr-dis, supp-dom, psico)
+    5.pavia (centro-aggr-dis, supp-dom, inter-comp)
+    
+    1.psico
+    2.par-tra
+    3.supp-dom
+    4.centro-aggr-dis
+    5.inter-comp
+    
+    */
+    
+    {
+        "idloc"=1,
+        "idserv"=[1,2,5]
+        
+    },
+    {
+        "idloc"=2,
+        "idserv"=[2,3,4]
+        
+    },
+    {
+        "idloc"=3,
+        "idserv"=[1,3,4]
+        
+    },
+    {
+        "idloc"=4,
+        "idserv"=[1,3,4]
+        
+    },
+    {
+        "idloc"=5,
+        "idserv"=[3,4,5]
+        
+    }
+    
+]
