@@ -1,0 +1,131 @@
+/*
+1.Stefano 
+2.Giulia
+3.Giovanna
+4.Astolfo
+5.Edoardo
+
+1.mi-aff 
+2.mi-cs 
+3.melegnano
+4.mantova 
+5.pavia 
+
+1.psico
+2.par-tra
+3.supp-dom
+4.cent-agg-dis
+5.int_ter_com
+    
+*/
+[
+    //psico
+    {
+        "idservizio"=1,
+        "idlocation"=1,
+        "idpersona"=2,
+        "orario"="LUN-MAR: 8:00 - 12:00"
+    },
+    
+    {
+        "idservizio"=1,
+        "idlocation"=3,
+        "idpersona"=2,
+        "orario"="MER-GIO: 9:00 - 12:00"
+    },
+    
+    {
+        "idservizio"=1,
+        "idlocation"=4,
+        "idpersona"=5,
+        "orario"="VEN: 14:00 - 17:00"
+    },
+    
+    //par-tra
+    {
+        "idservizio"=2,
+        "idlocation"=2,
+        "idpersona"=2,
+        "orario"="LUN-MAR: 8:00 - 12:00<br>MER-GIO: 13:00 - 17:00"
+    },
+    {
+        "idservizio"=2,
+        "idlocation"=1,
+        "idpersona"=3,
+        "orario"="VEN: 17:00 - 20:00"
+    },
+    {
+        "idservizio"=2,
+        "idlocation"=2,
+        "idpersona"=5,
+        "orario"="GIO: 17:00 - 20:00"
+    },
+    
+    //supp-dom
+    {
+        "idservizio"=3,
+        "idlocation"=2,
+        "idpersona"=4,
+        "orario"="LUN-MAR: 8:00 - 12:00<br>MER-GIO: 15:00 - 17:00"
+    },
+    {
+        "idservizio"=3,
+        "idlocation"=4,
+        "idpersona"=4,
+        "orario"="MER-GIO: 8:00 - 12:00"
+    },
+    {
+        "idservizio"=3,
+        "idlocation"=5,
+        "idpersona"=4,
+        "orario"="LUN - MAR: 15:00 - 17:00<br>VEN: 8:00 - 12:00"
+    },
+    
+    //cent-agg-dis
+    {
+        "idservizio"=4,
+        "idlocation"=2,
+        "idpersona"=3,
+        "orario"="LUN-MAR: 14:00 - 20:00"
+    },
+    {
+        "idservizio"=4,
+        "idlocation"=3,
+        "idpersona"=3,
+        "orario"="MER-GIO: 16:00 - 20:00"
+    },
+    {
+        "idservizio"=4,
+        "idlocation"=4,
+        "idpersona"=5,
+        "orario"="LUN-MAR: 16:00 - 20:00"
+    },
+    {
+        "idservizio"=4,
+        "idlocation"=5,
+        "idpersona"=2,
+        "orario"="VEN: 16:00 - 20:00"
+    },
+    
+    //int_ter_com
+    {
+        "idservizio"=5,
+        "idlocation"=5,
+        "idpersona"=3,
+        "orario"="MER: 9:00 - 12:00"
+    },
+    {
+        "idservizio"=5,
+        "idlocation"=1,
+        "idpersona"=2,
+        "orario"="MER - GIO: 14:00 - 17:00"
+    },
+    {
+        "idservizio"=5,
+        "idlocation"=3,
+        "idpersona"=5,
+        "orario"="MER - GIO: 9:00 - 12:00"
+    },
+    
+    
+]

@@ -15,28 +15,28 @@
     */
     
     {
-        "idloc"=1,
-        "idserv"=[1,2,5]
+        "idlocation=1,
+        "idservizio"=[1,2,5]
         
     },
     {
-        "idloc"=2,
-        "idserv"=[2,3,4]
+        "idlocation"=2,
+        "idservizio"=[2,3,4]
         
     },
     {
-        "idloc"=3,
-        "idserv"=[1,3,4]
+        "idlocation"=3,
+        "idservizio"=[1,3,4]
         
     },
     {
-        "idloc"=4,
-        "idserv"=[1,3,4]
+        "idlocation"=4,
+        "idservizio"=[1,3,4]
         
     },
     {
-        "idloc"=5,
-        "idserv"=[3,4,5]
+        "idlocation"=5,
+        "idservizio"=[2,3,4,5]
         
     }
     
