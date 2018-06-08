@@ -1,22 +1,26 @@
 {
-  "name": "polimi-hyp-2017-boilerplate",
+  "name": "associazione-teodosio",
   "version": "1.0.0",
-  "main": "index.js",
-  "repository": "https://polimi-hyp-2017-10173412@bitbucket.org/polimi-hyp-2017-10173412/polimi-hyp-2018-project.git",
-  "author": "Vittorio Zaccaria <vittorio.zaccaria@polimi.it>",
-  "engines": {
-    "node": "7.5.0"
-  },
-  "license": "MIT",
+  "description": "Progetto di hypermedia AA 2017-2018: Associazione Teodosio",
+  "main": "server.js",
   "dependencies": {
-    "body-parser": "1.17.1",
-    "express": "4.15.2",
-    "knex": "0.13.0",
-    "lodash": "4.17.4",
-    "pg": "6.2.3",
-    "sqlite3": "3.1.8"
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "knex": "^0.14.6",
+    "lodash": "^4.17.10",
+    "process": "^0.11.10",
+    "sqlite": "^2.9.2"
   },
+  "devDependencies": {},
   "scripts": {
-    "start": "node ./index.js"
-  }
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://polimi-hyp-2018-10490408@bitbucket.org/polimihyp2018team10490408/associazione-teodosio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://bitbucket.org/polimihyp2018team10490408/associazione-teodosio#readme"
 }

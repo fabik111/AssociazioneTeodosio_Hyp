@@ -12,17 +12,19 @@ $(document).ready(function(){
     serv_title = $("#title_serv");
     contenuto = $("#contenuto_serv");
     image_url = $("#image_serv");
-
+     console.log(URL.id);
     $.ajax({
         method: "GET",
-        dataType: "json",
+        //dataType: "json",
+        dataType: 'json',
         crossDomain: true,
-        url: "../../Service.json",
+        url: "http://localhost:3000/service/"+URL.id,
         data: {
             id: URL.id //SEND THE ID OF THE SERVICE TO THE SERVER TO RETRIVE ONLY THOSE DATA
         },
         success: function (response) {
-            console.log(response);
+           
+            console.log(response.name);
             
             //UPDATE TEXT AND HTML RELATED TO THE RESPONSE RECEIVED
             page_title.text(response.name);
