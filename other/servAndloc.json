@@ -1,0 +1,29 @@
+[
+    
+    {
+        "idlocation":1,
+        "idservizio":[1,2,5]
+        
+    },
+    {
+        "idlocation":2,
+        "idservizio":[2,3,4]
+        
+    },
+    {
+        "idlocation":3,
+        "idservizio":[1,3,4]
+        
+    },
+    {
+        "idlocation":4,
+        "idservizio":[1,3,4]
+        
+    },
+    {
+        "idlocation":5,
+        "idservizio":[2,3,4,5]
+        
+    }
+    
+]
