@@ -38,6 +38,26 @@ $(document).ready(function(){
             console.log(request + ":" + error);
         }
     });
+    
+    $.ajax({
+        method: "GET",
+        //dataType: "json",
+        dataType: 'json',
+        crossDomain: true,
+        url: "http://localhost:3000/agenda?page=people&spec="+URL.id,
+       
+        success: function (response) {
+           
+            console.log(response);
+            
+            //TODO : caricare gli orari dei servizi
+        },
+        error: function (request, error) {
+            console.log(request + ":" + error);
+        }
+    });
+    
+    
 });
     
 
