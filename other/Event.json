@@ -1,31 +1,31 @@
  [{
         "id":1,
-        "nome":"Centri Estivi 2018",
+        "name":"Centri Estivi 2018",
         "descrizione":"<p>Anche quest'anno riproponiamo il Centro estivo per i nostri assistiti più piccoli. Per i bambini dai 3 ai 12 anni offriamo tutti i giorni giochi con l'acqua, attività creative e sportive. Organizziamo una volta al mese una gita giornaliera a cui possono partecipare anche i genitori.</p><p>Il centro estivo è un occasione per i nostri ragazzi di stare insieme e di imparare l'uno dall'altro.</p><h3 class='block-title'>Dove?</h3><p><a href='../../pages/location/melegnano.html'>Sede di Melegnano</a></p><h3 class='block-title'>Quando?</h3><p>Dall'11 giugno al 12 settembre</p><h3 class='block-title'>Per iscrizioni</h3><p>0355684564654</p>",
         "galleryfolder":"../../assets/img/event"
     },
     {
         "id":2,
-        "nome":"Cena di beneficienza",
+        "name":"Cena di beneficienza",
         "descrizione":"<p>Anche quest'anno organizziamo la cena per raccogliere fondi per sostenere i nostri progetti durante l'anno.</p><p>Chef d'eccezione per quest'anno sarà Carlo Cracco che presterà le sue abilità gratuitamente.</p><p>Ospiti prestigiosi: il Sindaco di Milano Giuseppe Sala, il presidente della Regione Fontana, Alex Zanardi e molti altri...</p><h3 class='block-title'>Dove?</h3><p><a href='../../pages/location/mi_aff.html'>Sede di Milano Affori</a></p><h3 class='block-title'>Quando?</h3><p>26 Aprile</p><h3 class='block-title'>Per prenotazioni</h3><p>026655656556</p>",
         "galleryfolder":"../../assets/img/event"
     },
     
 {
         "id":3,
-        "nome":"Gita a Sirmione",
+        "name":"Gita a Sirmione",
         "descrizione":"<p>Siamo lieti di annurciavi l'organizzazione di una gita giornaliera a Sirmione (BS) sul lago di Garda per i nostri assistiti e le loro familie. </p><p>Si partirà dal centro di <a href='../location/mi_cs.html'>Milano Città Studi</a> alle 8:00; l'arrivo è previsto per le 10:30 a cui seguirà una visita della cittatidina</p><p>Il pranzo verrà servito presso il Ristorante Primula Rossa</p><h3 class='block-title'>Costo</h3><p>E' richiesto un contributo di € 20 per ciascun partecipante</p><h3 class='block-title'>Quando?</h3><p>Sabato 23 Giugno 2018</p><h3 class='block-title'>Per iscrizioni</h3><p>023555555</p>",
         "galleryfolder":"../../assets/img/event"
     },
     {
         "id":4,
-        "nome":"Gita al faro di Brunate",
+        "name":"Gita al faro di Brunate",
         "descrizione":"<p>Siamo lieti di annunciarvi l'organizzazione di una gita giornaliera al Faro di Brunate (CO). Il Faro Voltiano è una torre ottagonale alta 29 metri eretta nel 1927 sulla vetta del Monte Tre Croci (località San Maurizio) in occasione del centenario della morte di Alessandro Volta. Nella volta centrale del faro fu collocato un busto del fisico comasco.</p><p>La partenza è prevista dal centro di <a href='../location/mi_aff.html>Milano Affori </a>alle 8:00</p><p>E' prevista la colazione al sacco</p><h3 class='block-title'>Costi</h3><p>E' previsto un contributo di €10</p><h3 class='block-title'>Dove?</h3><p><a href='https://it.wikipedia.org/wiki/Brunate'>Brunate (CO)</a></p><h3 class='block-title'>Quando?</h3><p>21 Luglio 2018</p><h3 class='block-title'>Per prenotazioni</h3><p>02335555</p>",
         "galleryfolder":"../../assets/img/event"
     },
     {
         "id":5,
-        "nome":"Grande festa",
+        "name":"Grande festa",
         "descrizione":"<p>Siete tutti invitati alla grande festa dell'associazione. Vi aspettano tante attività e tanti giochi.</p><p>La festa inizia alle 10:00 e durerà tutta la giornata.</p><h3 class='block-title'>Dove?</h3><p><a href='../../pages/location/mi_aff.html'>Sede di Milano Affori</a></p><h3 class='block-title'>Quando?</h3><p>Sabato 9 Giugno</p>",
         "galleryfolder":"../../assets/img/event"
     }

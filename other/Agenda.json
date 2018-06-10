@@ -21,12 +21,6 @@
     
     {
         "idservizio":2,
-        "idlocation":2,
-        "idpersona":2,
-        "orario":"LUN-MAR: 8:00 - 12:00<br>MER-GIO: 13:00 - 17:00"
-    },
-    {
-        "idservizio":2,
         "idlocation":1,
         "idpersona":3,
         "orario":"VEN: 17:00 - 20:00"
@@ -53,7 +47,7 @@
         "idservizio":3,
         "idlocation":5,
         "idpersona":4,
-        "orario":"LUN - MAR: 15:00 - 17:00<br>VEN: 8:00 - 12:00"
+        "orario":"LUN - MAR: 14:00 - 17:00<br>VEN: 8:00 - 12:00"
     },
 
     {
@@ -72,13 +66,13 @@
         "idservizio":4,
         "idlocation":4,
         "idpersona":5,
-        "orario":"LUN-MAR: 16:00 - 20:00"
+        "orario":"VEN: 16:00 - 20:00"
     },
     {
         "idservizio":4,
         "idlocation":5,
         "idpersona":2,
-        "orario":"VEN: 16:00 - 20:00"
+        "orario":"LUN-MAR: 16:00 - 20:00"
     },
     {
         "idservizio":5,
