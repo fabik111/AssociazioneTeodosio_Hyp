@@ -5,7 +5,7 @@ let bodyparser=require("body-parser");
 let _ =require("lodash");
 let knex=require("knex");
 //other/
-app.use(express.static(__dirname + "/other"));
+
 let sqldb;
 //load data from json
 let services= require ("./other/Service.json");
@@ -13,7 +13,7 @@ let people= require ("./other/People.json");
 let locations = require ("./other/Location.json");
 let events= require ("./other/Event.json");
 let agenda = require ("./other/Agenda.json");
-let serveloc= require ("./other/servAndloc.json");
+
 
 function initdatabaseconnection(){//per fare la connessione al db
   sqldb=  knex({
@@ -28,7 +28,7 @@ function initdatabaseconnection(){//per fare la connessione al db
 function ensurepopulated()
 {  
     //creating services table
-    sqldb.schema.hasTable("services").then(function(exists){
+     sqldb.schema.hasTable("services").then(function(exists){
         if(!exists){
             sqldb.schema.createTable("services", function(table){
                 table.integer('id').primary(); 
@@ -55,7 +55,7 @@ function ensurepopulated()
         if(!exists){
             sqldb.schema.createTable("location", function(table){
                 table.integer('id').primary(); 
-               table.string("nome");
+               table.string("name");
                table.text("img");
                 table.text("descrizione");
                 table.text("mappa");
@@ -99,7 +99,7 @@ function ensurepopulated()
         if(!exists){
             sqldb.schema.createTable("events", function(table){
                 table.integer('id').primary(); 
-               table.string("nome");
+               table.string("name");
                //table.text("img");
                 table.text("descrizione");
                 table.string("galleryfolder");
@@ -117,10 +117,10 @@ function ensurepopulated()
     });
     
     //creating agenda table
-     sqldb.schema.hasTable("agenda").then(function(exists){
+     return sqldb.schema.hasTable("agenda").then(function(exists){
         if(!exists){
             sqldb.schema.createTable("agenda", function(table){
-                table.unique(['idservizio','idlocation','idpersona']);
+                table.primary(['idservizio','idlocation','idpersona']);
                 table.integer('idservizio'); 
                 table.integer('idlocation');
                table.integer('idpersona');
@@ -139,24 +139,7 @@ function ensurepopulated()
         }
     });
     
-    //creating serveloc table
-   return sqldb.schema.hasTable("serveloc").then(function(exists){
-        if(!exists){
-            sqldb.schema.createTable("serveloc", function(table){
-                table.integer('idservizio').primary(); 
-               table.integer('idlocation').primary();
-                
-            }).then(function(){
-                let insertion= _.map(serveloc,function(p){ 
-                 
-                  return sqldb("serveloc").insert(p);
-                })
-            return Promise.all(insertion);
-                });
-        }else{
-            return true;
-        }
-    });
+ 
      
 }
 
@@ -164,7 +147,7 @@ let myport=process.env.PORT | 3000;
 
 
 
-
+app.use(express.static(__dirname + ""));
 app.use(bodyparser.json());
 app.use(bodyparser.urlencoded({extended: true}));
 app.set("port",myport);
@@ -226,12 +209,39 @@ app.get("/event/:id", function(req,res){
     })
 })
 
-
+//agenda?page=table&spec=id
 app.get("/agenda",function(req, res){
-    let page= _.get(req,"query.page");
+    let table= _.get(req,"query.page");
     let spec=_.get(req,"query.spec");
+    var id=table + ".id";
+    var name=table +".name";
+    var condition;
+    var comparator;
+    console.log(table+" "+spec);
+    if (table==="services"){
+        joined="agenda.idservizio";
+        condition="agenda.idpersona";
+    }
+    else if (table==="people"){
+        condition="agenda.idservizio";
+        joined="agenda.idpersona";
+    }
+    sqldb("agenda").join("location","agenda.idlocation","location.id").join(table,joined,id).where(condition,spec).orderBy(id).select("agenda.idlocation",  "location.name as locationname", id, name, "agenda.orario").then(function(row){
+       res.status(200);
+        console.log(row);
+       res.send(row);
+    })
     
-    //ricerca secondo page e spec
+    
+})
+
+app.get("/agenda_location",function(req,res){
+    let id=_.get(req,"query.id");
+    sqldb("agenda").join("services","agenda.idservizio","services.id").where("idlocation",id).select("idservizio", "services.name as servicesname","orario").then(function(row){
+        console.log(row);
+        res.status(200);
+        res.send(row);
+    })
 })
         
 app.post("/pets",function(req,res){
@@ -245,10 +255,11 @@ app.post("/pets",function(req,res){
 
 initdatabaseconnection();
 ensurepopulated().then(
-    {function(){app.listen(myport, function(){
+    function(){app.listen(myport, function(){
     console.log("Server running");
-
-    });}});
+})
+}
+);
     
 
 
