@@ -1,21 +1,26 @@
 var page_title;
-var serv_title;
+var loc_title;
 var contenuto;
 var image_url;
+var map_url;
+var contatti;
 
 $(document).ready(function(){
     
     page_title = $("#title");
-    serv_title = $("#title_serv");
-    contenuto = $("#contenuto_serv");
-    image_url = $("#image_serv");
+    loc_title = $("#title_loc");
+    contenuto = $("#contenuto_loc");
+    image_url = $("#image_loc");
+    map_url = $("iframe");
+    contatti = $("#contacts");
+    
      console.log(URL.id);
     $.ajax({
         method: "GET",
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/service/"+URL.id,
+        url: "http://localhost:3000/location/"+URL.id,
         data: {
             id: URL.id //SEND THE ID OF THE SERVICE TO THE SERVER TO RETRIVE ONLY THOSE DATA
         },
@@ -25,9 +30,11 @@ $(document).ready(function(){
             
             //UPDATE TEXT AND HTML RELATED TO THE RESPONSE RECEIVED
             page_title.text(response.name);
-            serv_title.text(response.name);
+            loc_title.text(response.name);
             contenuto.html(response.descrizione);
             image_url.attr("src",response.img); 
+            map_url.attr("src", response.mappa);
+            contatti.html(response.contatti);
             
         },
         error: function (request, error) {
@@ -40,7 +47,7 @@ $(document).ready(function(){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/agenda?page=people&spec="+URL.id,
+        url: "http://localhost:3000/agenda_location",
        
         success: function (response) {
            
@@ -59,6 +66,9 @@ $(document).ready(function(){
 
 
 
+
+
+
 function loadData(json) {
 
     console.log(json);
@@ -66,13 +76,10 @@ function loadData(json) {
     
     for (var i = 0; i < json.length; i++){
         
-        var locLink = '../location/location.html?id=' + json[i].idlocation;
-        var persLink = '../people/person.html?id=' + json[i].id;
+        var servLink = '../services/service.html?id=' + json[i].idservizio;
         
-        el += '<li><a href="'+locLink+'">'+json[i].locationname+'</a><ul><li><small><a href="'+persLink+'">'+json[i].name+'</a></small><br>Orari di servizio:<br><div>'+json[i].orario+'</div></li></ul></li>';
+        el += '<li><a href="'+servLink+'">'+json[i].servicesname+'</a><p>Orari di servizio:<br><div>'+json[i].orario+'</div></li>';
 
-        
-        
     }
     
     $("#agendaList").append(el);
