@@ -48,18 +48,7 @@ $("#drp").click(function(){
         
     }
                      });
-$( "select" )
-  .change(function() {
-    nascondilista();
-   
-    $( "select option:selected" ).each(function() {
-    
-       mostraservizi($( this ).val());
-       
-    });
-    
-  })
-  .trigger( "change" );
+
 
    
 
@@ -133,15 +122,4 @@ $( "select" )
   });
 
 });
-//FRANCESCO FOR 'GROUP_BY_SERV'
-function mostraservizi(loc){
-    $(loc).show();
-}
-function nascondilista(){
-    document.getElementById("loc1").style.display = "none";
-    document.getElementById("loc2").style.display = "none";
-    document.getElementById("loc3").style.display = "none";
-    document.getElementById("loc4").style.display = "none";
-    document.getElementById("loc5").style.display = "none";
-    
-}
+

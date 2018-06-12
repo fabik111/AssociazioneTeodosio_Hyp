@@ -208,7 +208,7 @@ app.get("/event/:id", function(req,res){
         res.send(row);
     })
 })
-
+//return agenda for people and services pages topic
 //agenda?page=table&spec=id
 app.get("/agenda",function(req, res){
     let table= _.get(req,"query.page");
@@ -234,7 +234,7 @@ app.get("/agenda",function(req, res){
     
     
 })
-
+//return agenda for location pages topic
 app.get("/agenda_location",function(req,res){
     let id=_.get(req,"query.id");
     sqldb("agenda").join("services","agenda.idservizio","services.id").where("idlocation",id).select("idservizio", "services.name as servicesname","orario").then(function(row){
@@ -243,6 +243,22 @@ app.get("/agenda_location",function(req,res){
         res.send(row);
     })
 })
+// /all?ttable=services||location||people||events
+app.get("/all",function(req,res){
+    let table=_.get(req,"query.table");
+    let result;
+    if(table==="people")
+        result="img1";
+    else
+        result="img";
+    sqldb(table).orderBy("name").select("id","name",result).then(function(row){
+        console.log(row);
+        res.status(200);
+        res.send(row);
+    })
+})
+
+
         
 app.post("/pets",function(req,res){
     let petbody={

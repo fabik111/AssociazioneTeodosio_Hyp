@@ -140,51 +140,17 @@
          <br> 
          <h3>seleziona centro</h3>
            <select  class="form-control" id="myselect" name=""  >
-    <option value=""></option>           
-    <option value="#loc1" >Milano - Affori</option>
-    <option value="#loc2" >Milano - Città Studi</option>
-    <option value="#loc3">Melegnano</option>
-    <option value="#loc4">Mantova</option>
-    <option value="#loc5">Pavia</option>
+    <option value="none"></option>           
+    <option value="1" >Milano - Affori</option>
+    <option value="2" >Milano - Città Studi</option>
+    <option value="3">Melegnano</option>
+    <option value="4">Mantova</option>
+    <option value="5">Pavia</option>
                                
   </select>
-       <div class="lista" id="loc1" >
-         <ul>
-           <li><a href="./int_ter_com.html">Interventi Terapeutici Complessi</a></li>
-           <li><a href="./par_tra.html">Parent Training</a></li>
-           <li><a href="./psico.html">Psicoterapia</a></li>
-         </ul>
-       </div>
-        
-        <div class="lista" id="loc2">
-         <ul>
-             <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-             <li><a href="./par_tra.html">Parent Training</a></li>
-           <li><a href="./supp_dom.html">Supporto Domiciliare</a></li>
-         </ul>
-       </div>
-    
-        <div class="lista" id="loc3">
-         <ul>
-           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-           <li><a href="./int_ter_com.html">Interventi Terapeutici Complessi</a></li>
-           <li><a href="./psico.html">Psicoterapia</a></li>           
-         </ul>
-       </div>
-    
-        <div class="lista" id="loc4">
-         <ul>
-           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-           <li><a href="./psico.html">Psicoterapia</a></li>
-           <li><a href="./supp_dom.html">Supporto Domiciliare</a></li>
-         </ul>
-       </div>
-    
-        <div class="lista" id="loc5">
-         <ul>
-           <li><a href="./cent_agg_dis.html">Centro Aggregazione Disabili</a></li>
-           <li><a href="./supp_dom.html">Supporto Domiciliare</a></li>
-           <li><a href="./int_ter_com.html">Interventi Terapia Complessi</a></li>
+       <div>
+         <ul id="serv">
+           
          </ul>
        </div>
          
@@ -258,7 +224,8 @@ Usage: data-block-bg-img="IMAGE-URL" to apply a background image clearly via jQu
   
   <!-- Template Specisifc Custom Javascript File -->
   <script src="../../assets/js/custom.js"></script>
-
+  <!--Dinamic loader content-->
+  <script src="../../assets/js/group_by_serv.js"></script>
   
 
 </body>
