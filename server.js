@@ -116,6 +116,20 @@ function ensurepopulated()
         }
     });
     
+    sqldb.schema.hasTable("messages").then(function(exists){
+        if(!exists){
+            sqldb.schema.createTable("messages", function(table){
+               table.increments('id');
+                table.text("nome");
+                table.text("cognome");
+                table.text("email");
+                table.text("messaggio");
+            }).then();
+        }else{
+            return true;
+        }
+    });
+    
     //creating agenda table
      return sqldb.schema.hasTable("agenda").then(function(exists){
         if(!exists){
@@ -153,18 +167,6 @@ app.use(bodyparser.urlencoded({extended: true}));
 app.set("port",myport);
 app.use(express.static(__dirname + '/public'));
 
-app.get("/pets",function(req,res){ //analizza la url e ritorna l'elemnto richiesto con metodo get
-   // res.send(JSON.stringify(petdata));//ritorna una lista di pet a caso 
-   //se localhost:3000/pets?limit=4&sort=age
-    let start= parseInt(_.get(req,"query.start",0));//_get assegna un valore di default alla chiamata
-    let limit= parseInt(_.get(req, "query.limit",5));
-    let myquery =sqldb("pets").limit(limit).offset(start).then((pets)=>{
-        //res.send(JSON.stringify(pets));
-        console.log(pets);
-        res.send(pets);
-   })
-  
-})
 
 app.get("/service/:id", function(req,res){ 
     
@@ -260,12 +262,19 @@ app.get("/all",function(req,res){
 
 
         
-app.post("/pets",function(req,res){
-    let petbody={
-        name:req.body.name,
-        tag: req.body.tag,
-        born: req.body.born
-    };
+app.post("/contact",function(req,res){
+    let msg = {
+    nome: req.body.nome,
+    cognome: req.body.cognome,
+    email: req.body.email,
+    messaggio: req.body.messaggio
+  };
+    sqldb("messages")
+    .insert(msg)
+    .then(function() {
+      res.status(200);
+    res.send("ok");
+    });
     
 })
 
