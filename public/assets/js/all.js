@@ -81,8 +81,7 @@ function loadData(json){
 
             var itemLink = link + json[i].id;
             var itemImg = json[i].img1;
-            el += '<div class="row"><div class="col-md-6"><div class="col-md-6"><a href="' + itemLink + '"><img src="' + itemImg + '" width="50%" height="50%"></a></div><div class="col-md-6"><h3><a href="' + itemLink +'">' + json[i].name + '</a></h3><p>' +'</p></div></div></div>';
-            //problema non legge la qualifica
+            el += '<div class="row"><div class="col-md-6"><div class="col-md-6"><a href="' + itemLink + '"><img src="' + itemImg + '" width="50%" height="50%"></a></div><div class="col-md-6"><h3><a href="' + itemLink +'">' + json[i].name + '</a></h3><p>' + json[i].qualifica + '</p></div></div></div>';
             
             if(i != (json.length - 1)){
             el += '<hr>'; 
