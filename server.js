@@ -249,15 +249,23 @@ app.get("/agenda_location",function(req,res){
 app.get("/all",function(req,res){
     let table=_.get(req,"query.table");
     let result;
-    if(table==="people")
+    if(table==="people"){
+        
+    
         result="img1";
-    else
-        result="img";
+         sqldb(table).orderBy("name").select("id","name",result,"qualifica").then(function(row){
+        console.log(row);
+        res.status(200);
+        res.send(row);
+    })
+    }else
+     {   result="img";
     sqldb(table).orderBy("name").select("id","name",result).then(function(row){
         console.log(row);
         res.status(200);
         res.send(row);
     })
+     }
 })
 
 
