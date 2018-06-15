@@ -59,7 +59,7 @@ $(document).ready(function(){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/all?table=people",
+        url: "http://localhost:3000/all?table=people&id=" + URL.id,
        
         success: function (response) {
            
@@ -84,7 +84,7 @@ function createCarousel(json){
         if(json[i].id != URL.id){
             var link = "persona.html?id="+json[i].id;
         
-            caro += '<div class="item"><a href="'+link+'" class="overlay-wrapper"><img src="'+json[i].img1+'" class="img-responsive underlay" width="200px"><span class="overlay"><span class="overlay-content"> <span class="h4">'+''/*Manca la qualifica del tipo*/+'</span> </span></span></a><div class="item-details bg-noise"><h4 class="item-title"><a href="'+link+'">'+json[i].name+'</a></h4></div></div>';
+            caro += '<div class="item"><a href="'+link+'" class="overlay-wrapper"><img src="'+json[i].img1+'" class="img-responsive underlay" width="200px"><span class="overlay"><span class="overlay-content"> <span class="h4">'+json[i].qualifica+'</span> </span></span></a><div class="item-details bg-noise"><h4 class="item-title"><a href="'+link+'">'+json[i].name+'</a></h4></div></div>';
         }
     }
     $("#other_people").append(caro);

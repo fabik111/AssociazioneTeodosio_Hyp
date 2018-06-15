@@ -48,7 +48,7 @@ $(document).ready(function(){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/agenda_location",
+        url: "http://localhost:3000/agenda_location/?id="+URL.id,
        
         success: function (response) {
            
@@ -87,7 +87,7 @@ function loadData(json) {
         
         var servLink = '../services/service.html?id=' + json[i].idservizio;
         
-        el += '<li><a href="'+servLink+'">'+json[i].servicesname+'</a><p>Orari di servizio:<br><div>'+json[i].orario+'</div></li>';
+        el += '<li><a href="'+servLink+'">'+json[i].servicesname+'</a><p>Orari di servizio:<br>'+json[i].orario+'</p></li>';
 
     }
     
