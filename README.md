@@ -15,9 +15,9 @@ https://bitbucket.org/polimihyp2018team10490408/associazione-teodosio/src/master
 - Team member n.3   : Di Clemente Francesco 10422431
 
 ## Workflow
-- Baldasseroni Eva: Creazione delle pagine Multiple Topic Service, Location e People; Creazione della pagina Group All events; gestione delle immagini
-- Centonze Fabio Massimo: Gestione della Repo e deployment; modifiche al template (modifiche toolbar, header, footer, style.css per responsivity); creazione pagine Single Topic Chi siamo, News, Contatti, Dona. 
-- Di Clemente Francesco: Creazione delle pagine Groups All Service, All People, All location; creazione pagina Multiple Group Services by Location X;
+- Baldasseroni Eva: Creazione delle pagine Multiple Topic Service, Location e People; Creazione della pagina Group All events; gestione delle immagini; Creazione delle pagine dinamiche Service, Persona, Location, Event e i relativi JS con chiamate Ajax
+- Centonze Fabio Massimo: Gestione della Repo e deployment; modifiche al template (modifiche toolbar, header, footer, style.css per responsivity); creazione pagine Single Topic Chi siamo, News, Contatti, Dona; Creazione intera del "server" index.js, resa dinamica della pagina Multiple Group Services by Location X con JS relativo e chiamata Ajax; invio messaggio dal contact form 
+- Di Clemente Francesco: Creazione delle pagine Groups All Service, All People, All location; creazione pagina Multiple Group Services by Location X; Creazione della pagina dinamica all.html con relativo JS e chiamata Ajax; Creazione e popolamento file json conteneti le informazioni che vengono caricare sul DB
 
 ## Strumenti usati
 ### Front-End
