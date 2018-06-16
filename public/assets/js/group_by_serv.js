@@ -21,7 +21,7 @@ function mostraservizi(loc){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/agenda_location?id="+loc,
+        url: "/agenda_location?id="+loc,
         success: function (response) {
            var st="";
             console.log(response);

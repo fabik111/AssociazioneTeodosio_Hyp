@@ -11,7 +11,7 @@ $(document).ready(function(){
         $.ajax({
             method:"POST",
             crossDomain:true,
-            url:"http://localhost:3000/contact",
+            url:"/contact",
             data:j,
             success: function(response){
                
