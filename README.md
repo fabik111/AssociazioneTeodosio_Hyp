@@ -5,7 +5,10 @@ Progetto di hypermedia AA 2017-2018: Associazione Teodosio
 ```
 https://polimi-hyp-2018-team-10490408.herokuapp.com/index.html
 ```
-
+## Bitbucket url
+```
+https://bitbucket.org/polimihyp2018team10490408/associazione-teodosio/src/master/
+```
 ## Team
 - Team Administrator: Centonze Fabio Massimo 10490408 
 - Team member n.2   : Baldasseroni Eva 10522652
@@ -60,43 +63,43 @@ https://polimi-hyp-2018-team-10490408.herokuapp.com/index.html
 - Location //Informazioni relative alle pagine location: id, nome, descrizione, link immagini, link mappa
 - People   //Informazioni relative alle pagine persona: id, nome, descrizione, link immagini, qualifica
 - Events   //Informazioni relative alle pagine eventi: id, nome, descrizione, link immagini
-- Agenda   //Tabella contenente la schedulazione delle attivit√† dell'associazione Servizio (Cosa) - Location (Dove) - Persona (Chi) - Orario (Quando)
+- Agenda   //Tabella contenente la schedulazione delle attivit‡ dell'associazione Servizio (Cosa) - Location (Dove) - Persona (Chi) - Orario (Quando)
 - Messages //Tabella contenente i messaggi ricevuti dal contact form: id, nome, cognome, email, messaggio
 ```
 - API REST
-#### Pagine Servizio
+##### Pagine Servizio
 ```
 /service/:id (id del servizio di cui si stanno richiedendo le risorse) 
 ```
-#### Pagine Persona
+##### Pagine Persona
 ```
 /person/:id (id della persona di cui si stanno richiedendo le risorse) 
 ```
-#### Pagine Location
+##### Pagine Location
 ```
 /location/:id (id della location di cui si stanno richiedendo le risorse) 
 ```
-#### Pagine Eventi
+##### Pagine Eventi
 ```
 /event/:id (id dell'evento di cui si stanno richiedendo le risorse) 
 ```
-#### Informazioni dall'agenda per pagine Servizio e Persona
+##### Informazioni dall'agenda per pagine Servizio e Persona
 ```
 /agenda?page=type&id=id ("page" va completato con il nome della categoria da cui estrarre informazioni [services,people]; 
 "id" della risorsa di cui si vogliono informazioni)
 
 ```
-#### Informazioni dall'agenda per pagina Location
+##### Informazioni dall'agenda per pagina Location
 ```
 /agenda_location?id (id della risorsa di cui si vogliono informazioni)
 
 ```
-#### Informazioni dalle tabelle per ottenere gli elenchi di Servizi, Persone, Location e Eventi
+##### Informazioni dalle tabelle per ottenere gli elenchi di Servizi, Persone, Location e Eventi
 ```
-/all?table=table (table √® il nome della risorsa di cui vogliamo tutti gli elementi [services, people, location,events])
+/all?table=table (table Ë il nome della risorsa di cui vogliamo tutti gli elementi [services, people, location,events])
 
 ```
-#### Invio dei messaggi
+##### Invio dei messaggi
 ```
 /contact il resto degli argomenti viene passato in formato JSON attraverso il metodo POST
 
