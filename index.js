@@ -10,17 +10,23 @@ let sqldb;
 //load data from json
 let services= require ("./other/Service.json");
 let people= require ("./other/People.json");
-let locations = require ("./other/Location.json");
+let locations = require ("./other/location.json");
 let events= require ("./other/Event.json");
 let agenda = require ("./other/Agenda.json");
 
 
 function initdatabaseconnection(){
   sqldb=  knex({
-        client: "pg",
+        client: "sqlite3",
         debug: true,
+        connection:{
+            filename: "./other/assteodosio.sqlite"
+        }
+        /*client: "pg",
+        debug: true,
+        
         connection: process.env.DATABASE_URL,
-        ssl: true
+        ssl: true*/
     });
 }
 

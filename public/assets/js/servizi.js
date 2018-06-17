@@ -67,7 +67,7 @@ function loadData(json) {
     for (var i = 0; i < json.length; i++){
         
         var locLink = '../location/location.html?id=' + json[i].idlocation;
-        var persLink = '../people/person.html?id=' + json[i].id;
+        var persLink = '../people/persona.html?id=' + json[i].id;
         
         el += '<li><a href="'+locLink+'">'+json[i].locationname+'</a><ul><li><small><a href="'+persLink+'">'+json[i].name+'</a></small><br>Orari di servizio:<br><div>'+json[i].orario+'</div></li></ul></li>';
 
