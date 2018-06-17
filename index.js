@@ -17,16 +17,17 @@ let agenda = require ("./other/Agenda.json");
 
 function initdatabaseconnection(){
   sqldb=  knex({
-        client: "sqlite3",
+        /*client: "sqlite3",
         debug: true,
         connection:{
             filename: "./other/assteodosio.sqlite"
-        }
-        /*client: "pg",
+        }*/
+        client: "pg",
         debug: true,
-        
+        user: 'gfekuxhhkrbloz',
+        password: '56ba3791749747ee538fc80a681e90ac69c84170d27fe15c40a6c0b67f9a6e5f',
         connection: process.env.DATABASE_URL,
-        ssl: true*/
+        ssl: true
     });
 }
 
