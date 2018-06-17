@@ -40,7 +40,7 @@ $(document).ready(function(){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/agenda?page=people&spec="+URL.id,
+        url: "/agenda?page=people&spec="+URL.id,
        
         success: function (response) {
            

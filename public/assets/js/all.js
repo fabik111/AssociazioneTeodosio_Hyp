@@ -13,7 +13,7 @@ $(document).ready(function(){
         method: "GET",
         dataType: "json",
         //crossDomain: true,
-        url: "http://localhost:3000/all?table=" + URL.table,
+        url: "/all?table=" + URL.table,
         /*data: {
             table: URL.table
         },*/

@@ -48,7 +48,7 @@ $(document).ready(function(){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/agenda_location/?id="+URL.id,
+        url: "/agenda_location/?id="+URL.id,
        
         success: function (response) {
            
