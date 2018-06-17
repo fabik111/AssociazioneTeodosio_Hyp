@@ -21,7 +21,7 @@ $(document).ready(function(){
         },
         success: function (response) {
            
-            console.log(response.name);
+            
             
             //UPDATE TEXT AND HTML RELATED TO THE RESPONSE RECEIVED
             page_title.text(response.name);

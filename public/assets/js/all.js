@@ -106,8 +106,8 @@ function loadData(json){
         for(var i = 0; i< json.length; i++){
 
             var itemLink = link + json[i].id;
-            var itemImg = json[i].galleryfolder + json[i].id;
-            el += '<div class="showcase block block-border-bottom-grey"><div class="container"><div class="row"><div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><a href="' + itemLink + '.html"><img src="' + itemImg  + '.png" class="img-responsive img-thumbnail img-rounded pull-left" width="300px"></a></div><div class="col-xs-12 col-sm-9 col-md-9 col-lg-9"><h3 class="block-title">' + json[i].name + '</h3><a href="'+ itemLink + '.html" class="btn btn-more large"><i class="fa fa-plus"></i> Scopri di più</a></div></div></div></div>';
+            var itemImg = json[i].galleryfolder + '/event'+json[i].id;
+            el += '<div class="showcase block block-border-bottom-grey"><div class="container"><div class="row"><div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><a href="' + itemLink + '"><img src="' + itemImg  + '.png" class="img-responsive img-thumbnail img-rounded pull-left" width="300px"></a></div><div class="col-xs-12 col-sm-9 col-md-9 col-lg-9"><h3 class="block-title">' + json[i].name + '</h3><a href="'+ itemLink + '" class="btn btn-more large"><i class="fa fa-plus"></i> Scopri di più</a></div></div></div></div>';
             
             /*if(i != (json.length - 1)){
                 el += '<hr>'; 
