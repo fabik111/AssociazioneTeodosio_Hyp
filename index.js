@@ -163,7 +163,7 @@ function ensurepopulated()
      
 }
 
-let myport=process.env.PORT | 3000;
+let myport=process.env.PORT;
 
 
 
