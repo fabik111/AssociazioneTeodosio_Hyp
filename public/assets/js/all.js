@@ -13,7 +13,7 @@ $(document).ready(function(){
         method: "GET",
         dataType: "json",
         //crossDomain: true,
-        url: "/all?table=" + URL.table,
+        url: "http://localhost:3000/all?table=" + URL.table,
         /*data: {
             table: URL.table
         },*/
@@ -59,6 +59,13 @@ function loadData(json){
         page_title.text("All people");
     }
     
+    if(URL.table=="events"){
+        link="event/event.html?id=";
+        page_title.text("All events");
+    }
+    
+    
+    
     if(URL.table=="services" || URL.table=="location" ){
         for(var i = 0; i< json.length; i++){
             
@@ -90,6 +97,24 @@ function loadData(json){
         
         el += '</div></div>';
     
+    }
+    
+    if(URL.table == "events"){
+        el += '<div class="row"><h1 class="block-title">Eventi</h1><p>Elenco dei prossimi eventi organizzati dall associazione.</p></div></div></div><div class="thumbnails">';
+
+            
+        for(var i = 0; i< json.length; i++){
+
+            var itemLink = link + json[i].id;
+            var itemImg = json[i].galleryfolder + json[i].id;
+            el += '<div class="showcase block block-border-bottom-grey"><div class="container"><div class="row"><div class="col-xs-12 col-sm-3 col-md-3 col-lg-3"><a href="' + itemLink + '.html"><img src="' + itemImg  + '.png" class="img-responsive img-thumbnail img-rounded pull-left" width="300px"></a></div><div class="col-xs-12 col-sm-9 col-md-9 col-lg-9"><h3 class="block-title">' + json[i].name + '</h3><a href="'+ itemLink + '.html" class="btn btn-more large"><i class="fa fa-plus"></i> Scopri di più</a></div></div></div></div>';
+            
+            /*if(i != (json.length - 1)){
+                el += '<hr>'; 
+            }*/      
+        }
+            el += '</div>';
+        
     }
 
     
