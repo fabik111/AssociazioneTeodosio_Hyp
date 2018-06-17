@@ -59,7 +59,7 @@ $(document).ready(function(){
         //dataType: "json",
         dataType: 'json',
         crossDomain: true,
-        url: "http://localhost:3000/all?table=people&id=" + URL.id,
+        url: "/all?table=people&id=" + URL.id,
        
         success: function (response) {
            
