@@ -22,10 +22,10 @@ function initdatabaseconnection(){
         connection:{
             filename: "./other/assteodosio.sqlite"
         }*/
-        client: "pg",
+        client: "pg", 
         debug: true,
-        user: 'gfekuxhhkrbloz',
-        password: '56ba3791749747ee538fc80a681e90ac69c84170d27fe15c40a6c0b67f9a6e5f',
+        user: '###', //l'user e la psw sono inseriti nella versione di deployment su heroku. per motivi di sicurezza qui sono oscurati
+        password: '##',
         connection: process.env.DATABASE_URL,
         ssl: true
     });
