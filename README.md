@@ -1,18 +1,14 @@
 # Progetto Hypermedia 2018
 Progetto di hypermedia AA 2017-2018: Associazione Teodosio
 
-## Heroku url
+## Url del Sito
 ```
 https://polimi-hyp-2018-team-10490408.herokuapp.com/index.html
 ```
-## Bitbucket url
-```
-https://bitbucket.org/polimihyp2018team10490408/associazione-teodosio/src/master/
-```
 ## Team
-- Team Administrator: Centonze Fabio Massimo 10490408 
-- Team member n.2   : Baldasseroni Eva 10522652
-- Team member n.3   : Di Clemente Francesco 10422431
+- Team Administrator: Centonze Fabio Massimo 
+- Team member n.2   : Baldasseroni Eva 
+- Team member n.3   : Di Clemente Francesco 
 
 ## Workflow
 - Baldasseroni Eva: Creazione delle pagine Multiple Topic Service, Location e People; Creazione della pagina Group All events; gestione delle immagini; Creazione delle pagine dinamiche Service, Persona, Location, Event e i relativi JS con chiamate Ajax
