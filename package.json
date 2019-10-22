@@ -6,8 +6,8 @@
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.3",
+    "lodash": "^4.17.13",
     "knex": "^0.19.5",
-    "lodash": "^4.17.10",
     "pg": "^7.4.3",
     "process": "^0.11.10",
     "sqlite": "^2.9.2"
